@@ -18,7 +18,7 @@ https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
 
  ---------------------------------------------------------------------------------------------------------------------
 
-# Bot em Python para usar com Instagram
+# Bot em Python para usar com o Instagram
 
 Bot em Python para curtir e comentar fotos no Instagram, usando webdrivers e scranping.
 
