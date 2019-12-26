@@ -8,7 +8,7 @@ Geckodriver v0.26.0 </br>
 Coding: -&lowast;- coding: utf-8 -&lowast;- </br>
 en-US </br>
 
-To use the library required for this code, run the commands:
+To use the library required for this code, run the command:
 
   > pip install selenium </br>
   
@@ -28,7 +28,7 @@ Geckodriver v0.26.0 </br>
 Códificação: -&lowast;- coding: utf-8 -&lowast;- </br>
 en-US </br>
 
-Para usar a biblioteca necessária para esse código, execute os comando:
+Para usar a biblioteca necessária para esse código, execute o comando:
 
  > pip install selenium </br>
  
