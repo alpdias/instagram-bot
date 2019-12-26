@@ -10,7 +10,7 @@ en-US </br>
 
 To use the library required for this code, run the commands:
 
-  > selenium </br>
+  > pip install selenium </br>
   
 Note: To run the script have the program "geckodriver" on the machine.
 
@@ -30,7 +30,7 @@ en-US </br>
 
 Para usar a biblioteca necessária para esse código, execute os comando:
 
- > selenium </br>
+ > pip install selenium </br>
  
  Observação: Para executar o script tenha o programa "geckodriver" na máquina.
  
