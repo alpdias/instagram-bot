@@ -44,7 +44,6 @@ def botlogin (user, pwd):
 # hashtag search function
 def searchhashtag(hashtag):
     driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
-    print(f'Hashtag load: {hashtag}')
 
 
 # function to like the photos
@@ -57,13 +56,13 @@ def likephoto(likes):
         sleep(20)
         driver.find_element_by_class_name('coreSpriteRightPaginationArrow').click() # click on next photo button
         items = items + 1
-    print(f'Like photos: {items - 1}')
 
 
 # execution of functions
 botlogin(username, password)
 searchhashtag(hashtag)
 likephoto(likes)
+print('Finish!')
 print('')
 
 '''
