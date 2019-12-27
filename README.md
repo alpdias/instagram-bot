@@ -18,7 +18,7 @@ Note:
 
 https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
 
-* Pauses in code time will vary depending on your connection, so be aware of any errors related to this.
+* Timeouts in the code will vary depending on your connection, so be aware of any errors related to this.
 
 * The button for posting the comment described as 'Publicar' in code may vary by name depending on your instagram language, please check the broker name when running the script.
 
@@ -44,7 +44,7 @@ Para usar a biblioteca necessária para esse código, execute o comando:
  
  https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
  
- * As pausas tem tempo no código vão variar de acordo com sua conexão, atente-se a isso caso ocorra erros relacionados a isso.
+ * As pausas de tempo no código vão variar de acordo com sua conexão, atente-se a isso caso ocorra erros relacionados a isso.
  
  * O botão para publicar o comentário descrito como 'Publicar' no código pode variar de nome de acordo com o idioma do seu instagram, verifique o nome corretor ao executar o script.
  
