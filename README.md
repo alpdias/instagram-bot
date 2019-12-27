@@ -20,7 +20,7 @@ https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
 
 * Timeouts in the code will vary depending on your connection, so be aware of any errors related to this.
 
-* TThe button for posting the comment described as 'Post' in code may vary by name depending on your instagram language, check the DOM for the correct name to run the script.
+* The button for posting the comment described as 'Post' in code may vary by name depending on your instagram language, check the DOM for the correct name to run the script.
 
  ---------------------------------------------------------------------------------------------------------------------
 
