@@ -14,7 +14,7 @@ print('')
 username = str(input('User: ')) # your user
 password = str(input('Password: ')) # your password
 hashtag = str(input('Hashtag to like: ')) # hashtag
-likes = int(input('Amount of photos:')) # amount of photos to like
+likes = int(input('Amount of photos: ')) # amount of photos to like
 print('')
 print('Loading...')
 print('')
