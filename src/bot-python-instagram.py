@@ -67,7 +67,6 @@ print('')
 
 '''
 # references html
-
 # //a[@href='/accounts/login/?source=auth_switcher'] --> 'connect' button element
 # //input[@name='username'] --> 'username' input element
 # //input[@name='password'] --> 'password 'input element
