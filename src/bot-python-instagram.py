@@ -11,12 +11,15 @@ from time import sleep
 
 # input info for bot 
 print('')
-username = input(str('User: '))
-password = input(str('Password: '))
-hashtag = input(str('Hashtag: '))
+username = str(input('User: ')) # your user
+password = str(input('Password: ')) # your password
+hashtag = str(input('Hashtag to like: ')) # hashtag
+likes = int(input('Amount of photos:')) # amount of photos to like
 print('')
 print('Loading...')
 print('')
+
+# load browser drive in to var
 driver = webdriver.Firefox(executable_path=r'add here way to geckodriver.exe') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
 
 # function to access the login page and log in
@@ -38,18 +41,29 @@ def botlogin (user, pwd):
     sleep(2)
 
 
-def loadpages(hashtag):
+# hashtag search function
+def searchhashtag(hashtag):
     driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
-    sleep(2)
-    for i in range(1, 6): # number of pages to load
-        driver.execute_script('window.scrollTo(0, document.body.scrollHeight);') # scroll down to upload images
-        i = i + 1
-    print(f'Hashtag: {hashtag}')
-    print(f'Pages: {i}')
+    print(f'Hashtag load: {hashtag}')
 
 
+# function to like the photos
+def likephoto(likes):
+    driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
+    items = 1 
+    while items <= likes: # loop with how many photos to like
+        sleep(2)
+        driver.find_element_by_class_name('fr66n').click() # click the like button
+        sleep(20)
+        driver.find_element_by_class_name('coreSpriteRightPaginationArrow').click() # click on next photo button
+        items = items + 1
+    print(f'Like photos: {items - 1}')
+
+
+# execution of functions
 botlogin(username, password)
-loadpages(hashtag)
+searchhashtag(hashtag)
+likephoto(likes)
 print('')
 
 '''
@@ -58,4 +72,7 @@ print('')
 # //a[@href='/accounts/login/?source=auth_switcher'] --> 'connect' button element
 # //input[@name='username'] --> 'username' input element
 # //input[@name='password'] --> 'password 'input element
+# @class='v1Nh3' --> open photo
+# @class='fr66n' --> like button
+# @class='coreSpriteRightPaginationArrow' --> next photo button
 '''
