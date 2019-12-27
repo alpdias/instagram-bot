@@ -13,8 +13,8 @@ from time import sleep
 print('')
 username = str(input('User: ')) # your user
 password = str(input('Password: ')) # your password
-hashtag = str(input('Hashtag to like: ')) # hashtag
-likes = int(input('Amount of photos: ')) # amount of photos to like
+hashtag = str(input('Hashtag: ')) # hashtag
+likes = int(input('Amount: ')) # amount of photos to like
 print('')
 print('Loading...')
 print('')
@@ -42,28 +42,26 @@ def botlogin (user, pwd):
 
 
 # hashtag search function
-def searchhashtag(hashtag):
+def findhashtag(hashtag):
     driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
 
 
 # function to like the photos
-def likephoto(likes):
+def like(likes):
     driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
-    items = 1 
-    while items <= likes: # loop with how many photos to like
+    item = 1 
+    while item <= likes: # loop with how many photos to like
         sleep(2)
         driver.find_element_by_class_name('fr66n').click() # click the like button
-        sleep(20)
+        sleep(20) # break time between likes due to instagram policy against bots
         driver.find_element_by_class_name('coreSpriteRightPaginationArrow').click() # click on next photo button
-        items = items + 1
+        item = item + 1
 
 
 # execution of functions
 botlogin(username, password)
-searchhashtag(hashtag)
-likephoto(likes)
-print('Finish!')
-print('')
+findhashtag(hashtag)
+like(likes)
 
 '''
 # references html
