@@ -35,29 +35,21 @@ def botlogin (user, pwd):
     pwdelement.clear()
     pwdelement.send_keys(password) # password insertion in 'password' element
     pwdelement.send_keys(Keys.RETURN) # log in to page
-    sleep(4)
+    sleep(2)
 
 
-def likephoto(hashtag):
+def loadpages(hashtag):
     driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
-    driver.execute_script('window.scrollTo(0, document.body.scrollHeight);') # scroll down to upload images
-    hrefs = driver.find_elements_by_tag_name('a') # get the photo links
-    hrefsphotos = [elem.get_attribute('href') for elem in hrefs]
-    [href for href in hrefsphotos if hashtag in href]
-    print(f'Hashtag: {hashtag}')
-    print(f'Photos: {str(len(hrefsphotos))}')
-    for hrefsphotos in hrefsphotos:
-        driver.get(hrefsphotos) 
+    sleep(2)
+    for i in range(1, 6): # number of pages to load
         driver.execute_script('window.scrollTo(0, document.body.scrollHeight);') # scroll down to upload images
-        try:
-            driver.find_elements_by_class_name('//button[@class="dCJp8 afkep"]').click() # click the like button
-            sleep(20)
-        except:
-            sleep(10)
+        i = i + 1
+    print(f'Hashtag: {hashtag}')
+    print(f'Pages: {i}')
 
 
 botlogin(username, password)
-likephoto(hashtag)
+loadpages(hashtag)
 print('')
 
 '''
@@ -66,5 +58,4 @@ print('')
 # //a[@href='/accounts/login/?source=auth_switcher'] --> 'connect' button element
 # //input[@name='username'] --> 'username' input element
 # //input[@name='password'] --> 'password 'input element
-
 '''
