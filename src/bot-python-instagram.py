@@ -88,6 +88,7 @@ try:
     likecomment(likes, yourcomment)
 except:
     print('UNEXPECTED ERROR, please try again and verify your connection!')
+print('')
 print('Finish!')
 print('')
 
