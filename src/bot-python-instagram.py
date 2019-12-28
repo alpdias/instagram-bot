@@ -72,6 +72,7 @@ def likecomment(likes, yourcomment):
         sleep(20) # break time between likes and comment due to instagram policy against bots
         driver.find_element_by_class_name('coreSpriteRightPaginationArrow').click() # click on next photo button
         item = item + 1
+    print(f'Number of photos liked and commented: {item - 1}')
 
 
 # execution of functions
