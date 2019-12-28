@@ -8,14 +8,16 @@ Created in 12/2019
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from time import sleep
+import os
 
 # input info for bot 
 print('')
 username = str(input('User: ')) # your user
 password = str(input('Password: ')) # your password
+os.system('cls')
 hashtag = str(input('Hashtag: ')) # hashtag
-likes = int(input('Amount: ')) # amount of photos to like
 yourcomment = str(input('Comment: ')) # your comment on photos
+likes = int(input('Amount: ')) # amount of photos to like
 print('')
 print('Loading...')
 print('')
@@ -30,6 +32,7 @@ def botlogin (user, pwd):
     driver.get('https://www.instagram.com/') # instagram url
     sleep(1)
     loginbutton = driver.find_element_by_xpath('//a[@href="/accounts/login/?source=auth_switcher"]').click() # click on the 'connect' button element
+    sleep(1)
     userelement = driver.find_element_by_xpath('//input[@name="username"]') # 'username' input element
     userelement.clear()
     userelement.send_keys(username) # user insertion in 'user' element
@@ -51,7 +54,7 @@ def typephrase(comment, field):
         field.send_keys(letter) # type the letter in the field
         sleep(0.09) # input time of each letter
 
-       
+        
 # function to like the photos
 def likecomment(likes, yourcomment):
     driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
@@ -72,9 +75,20 @@ def likecomment(likes, yourcomment):
 
 
 # execution of functions
-botlogin(username, password)
-findhashtag(hashtag)
-likecomment(likes, yourcomment)
+try:
+    botlogin(username, password)
+except:
+    print('UNEXPECTED ERROR, please try again and verify your connection!')
+try:
+    findhashtag(hashtag)
+except:
+    print('UNEXPECTED ERROR, please try again and verify your connection!')
+try:
+    likecomment(likes, yourcomment)
+except:
+    print('UNEXPECTED ERROR, please try again and verify your connection!')
+print('Finish!')
+print('')
 
 '''
 # references html
