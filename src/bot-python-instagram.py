@@ -36,7 +36,7 @@ def botlogin (user, pwd):
     password = pwd # your password
     driver.get('https://www.instagram.com/') # instagram url
     sleep(1)
-    loginbutton = driver.find_element_by_xpath('//a[@href="/accounts/login/?source=auth_switcher"]').click() # click on the 'connect' button element
+    driver.find_element_by_xpath('//a[@href="/accounts/login/?source=auth_switcher"]').click() # click on the 'connect' button element
     sleep(1)
     userelement = driver.find_element_by_xpath('//input[@name="username"]') # 'username' input element
     userelement.clear()
@@ -73,7 +73,7 @@ def likecomment(likes, yourcomment):
         typephrase(yourcomment, comment) # insert comment typing each letter
         sleep(1)
         # the 'publish' button name changes according to your instagram language
-        postcomment = driver.find_element_by_xpath('//button[contains(text(), "Publicar")]').click() # click the post 'comment' button element
+        driver.find_element_by_xpath('//button[contains(text(), "Publicar")]').click() # click the post 'comment' button element
         sleep(60) # break time between likes and comment due to instagram policy against bots
         driver.find_element_by_class_name('coreSpriteRightPaginationArrow').click() # click on next photo button
         item = item + 1
