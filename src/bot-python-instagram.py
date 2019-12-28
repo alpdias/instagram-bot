@@ -12,9 +12,14 @@ import os
 
 # input info for bot 
 print('')
+print('\033[0;32mLOGIN INFORMATION\033[m')
+print('')
 username = str(input('User: ')) # your user
 password = str(input('Password: ')) # your password
 os.system('cls')
+print('')
+print('\033[0;32mBOT INFORMATION\033[m')
+print('')
 hashtag = str(input('Hashtag: ')) # hashtag
 yourcomment = str(input('Comment: ')) # your comment on photos
 likes = int(input('Amount: ')) # amount of photos to like
@@ -69,25 +74,25 @@ def likecomment(likes, yourcomment):
         sleep(1)
         # the 'publish' button name changes according to your instagram language
         postcomment = driver.find_element_by_xpath('//button[contains(text(), "Publicar")]').click() # click the post 'comment' button element
-        sleep(20) # break time between likes and comment due to instagram policy against bots
+        sleep(60) # break time between likes and comment due to instagram policy against bots
         driver.find_element_by_class_name('coreSpriteRightPaginationArrow').click() # click on next photo button
         item = item + 1
-    print(f'Number of photos liked and commented: {item - 1}')
+    print(f'Number of photos liked and commented: \033[0;33m{item - 1}\033[m')
 
 
 # execution of functions
 try:
     botlogin(username, password)
 except:
-    print('UNEXPECTED ERROR, please try again and verify your connection!')
+    print('\033[0;31mUNEXPECTED ERROR ON LOGIN\033[m, please try again and verify your connection!')
 try:
     findhashtag(hashtag)
 except:
-    print('UNEXPECTED ERROR, please try again and verify your connection!')
+    print('\033[0;31mUNEXPECTED ERROR ON HASHTAG PAGE\033[m, please try again and verify your connection!')
 try:
     likecomment(likes, yourcomment)
 except:
-    print('UNEXPECTED ERROR, please try again and verify your connection!')
+    print('\033[0;31mUNEXPECTED ERROR ON LIKED OR COMMENTED\033[m, please try again and verify your connection!')
 print('')
 print('Finish!')
 print('')
