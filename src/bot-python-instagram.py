@@ -8,7 +8,6 @@ Created in 12/2019
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from time import sleep
-import os
 
 # input info for bot 
 print('')
@@ -16,7 +15,6 @@ print('\033[0;32mLOGIN INFORMATION\033[m')
 print('')
 username = str(input('User: ')) # your user
 password = str(input('Password: ')) # your password
-os.system('cls')
 print('')
 print('\033[0;32mBOT INFORMATION\033[m')
 print('')
@@ -25,7 +23,6 @@ yourcomment = str(input('Comment: ')) # your comment on photos
 likes = int(input('Amount: ')) # amount of photos to like
 print('')
 print('Loading...')
-print('')
 
 # load browser drive in to var
 driver = webdriver.Firefox(executable_path=r'add here way to geckodriver.exe') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
