@@ -57,7 +57,7 @@ def typephrase(comment, field):
         sleep(0.09) # input time of each letter
 
         
-# function to like the photos
+# function to like and comment the photos
 def likecomment(likes, yourcomment):
     driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
     item = 1 
