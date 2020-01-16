@@ -31,7 +31,7 @@ Bot em Python para ver stories, curtir e comentar fotos no Instagram, usando web
 Python 3.8.0 </br>
 Microsoft VSCode 1.41.1 </br>
 Geckodriver v0.26.0 </br>
-Códificação: -&lowast;- coding: utf-8 -&lowast;- </br>
+Codificação: -&lowast;- coding: utf-8 -&lowast;- </br>
 en-US </br>
 
 Para usar a biblioteca necessária para esse código, execute o comando:
