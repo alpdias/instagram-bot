@@ -18,9 +18,9 @@ To use the library required for this code, run the command:
 
   https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
 
-* Timeouts in the code will vary depending on your connection and Instagram's policy on likes and comments by the hour and day, so be aware of any errors.
+* Timeouts in the code will vary depending on your connection and instagram's policy on likes and comments by the hour and day, so be aware of any errors and to keep your account free of lock.
 
-* The buttons to post the comment, view the stories and deny notifications described as 'Publicar', 'Ver tudo' and 'Agora não' in the code may vary by name depending on your instagram language, check the correct name in the DOM to execute the script.
+* Buttons for posting comment, viewing stories, and denying notifications described as 'Publicar', 'Ver tudo', and 'Agora não' in code may vary by name depending on your instagram language, please check DOM for correct name to execute the script.
 
  ---------------------------------------------------------------------------------------------------------------------
 
@@ -44,8 +44,8 @@ Para usar a biblioteca necessária para esse código, execute o comando:
  
   https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
  
-* As pausas de tempo no código vão variar de acordo com sua conexão e a politica do instagram sobre curtidas e comentários por hora e dia, atente-se a isso caso ocorra erros e para mantar a conta sem bloqueios.
+* As pausas de tempo no código vão variar de acordo com sua conexão e a politica do instagram sobre curtidas e comentários por hora e dia, atente-se a isso caso ocorra erros e para manter sua conta sem bloqueios.
  
-* Os botões para publicar o comentário, ver os stories e negar as notificações descritos como 'Publicar', 'Ver tudo' e 'Agora não' no código pode variar de nome de acordo com o idioma do seu instagram, verifique no DOM o nome correto para executar o script.
+* Os botões para publicar o comentário, ver os stories e negar as notificações descritos como 'Publicar', 'Ver tudo' e 'Agora não' no código podem variar de nome de acordo com o idioma do seu instagram, verifique no DOM o nome correto para executar o script.
  
 ----------------------------------------------------------------------------------------------------------------------
