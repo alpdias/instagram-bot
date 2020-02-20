@@ -1,6 +1,6 @@
-# Python bot for use with Instagram
+# Python BOT for use with Instagram
 
-Python bot to view stories, like and comment on Instagram photos using webdrivers and scranping.
+Python BOT to view stories, like and comment on Instagram photos using webdrivers and scranping.
 
 Python 3.8.0 </br>
 Microsoft VSCode 1.41.1 </br>
@@ -24,9 +24,9 @@ To use the library required for this code, run the command:
 
  ---------------------------------------------------------------------------------------------------------------------
 
-# Bot em Python para usar com o Instagram
+# BOT em Python para usar com o Instagram
 
-Bot em Python para ver stories, curtir e comentar fotos no Instagram, usando webdrivers e scranping.
+BOT em Python para ver stories, curtir e comentar fotos no Instagram, usando webdrivers e scranping.
 
 Python 3.8.0 </br>
 Microsoft VSCode 1.41.1 </br>
@@ -34,7 +34,7 @@ Geckodriver v0.26.0 </br>
 Codificação: -&lowast;- coding: utf-8 -&lowast;- </br>
 en-US </br>
 
-Para usar a biblioteca necessária para esse código, execute o comando:
+<strong>Módulos Python</strong>
 
  > pip install selenium </br>
  
