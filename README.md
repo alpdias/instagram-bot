@@ -8,7 +8,7 @@ Geckodriver v0.26.0 </br>
 Coding: -&lowast;- coding: utf-8 -&lowast;- </br>
 en-US </br>
 
-To use the library required for this code, run the command:
+<strong>Python modules</strong>
 
   > pip install selenium </br>
   
