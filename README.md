@@ -2,6 +2,8 @@
 
 Python BOT to view stories, like and comment on Instagram photos using webdrivers and scranping.
 
+Follow me @python.bot
+
 Python 3.8.0 </br>
 Microsoft VSCode 1.41.1 </br>
 Geckodriver v0.26.0 </br>
@@ -27,6 +29,8 @@ en-US </br>
 # BOT em Python para usar com o Instagram
 
 BOT em Python para ver stories, curtir e comentar fotos no Instagram, usando webdrivers e scranping.
+
+Siga-me @python.bot
 
 Python 3.8.0 </br>
 Microsoft VSCode 1.41.1 </br>
