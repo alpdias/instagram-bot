@@ -2,7 +2,7 @@
 
 Python BOT to view stories, like and comment on Instagram photos using webdrivers and scranping.
 
-Follow me on Instagram @python.bot
+Follow me on Instagram <strong>@python.bot</strong>
 
 Python 3.8.0 </br>
 Microsoft VSCode 1.41.1 </br>
@@ -30,7 +30,7 @@ en-US </br>
 
 BOT em Python para ver stories, curtir e comentar fotos no Instagram, usando webdrivers e scranping.
 
-Siga-me no Instagram @python.bot
+Siga-me no Instagram <strong>@python.bot</strong>
 
 Python 3.8.0 </br>
 Microsoft VSCode 1.41.1 </br>
