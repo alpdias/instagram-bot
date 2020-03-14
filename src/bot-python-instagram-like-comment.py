@@ -47,9 +47,15 @@ def botlogin (user, pwd):
     username = user # your user
     password = pwd # your password
     driver.get('https://www.instagram.com/') # instagram url
+
+    '''
+    this page / button was removed by Instagram
+
     sleep(1)
     driver.find_element_by_xpath('//a[@href="/accounts/login/?source=auth_switcher"]').click() # click on the 'connect' button element
-    sleep(1)
+    '''
+    
+    sleep(2)
     userelement = driver.find_element_by_xpath('//input[@name="username"]') # 'username' input element
     userelement.clear()
     userelement.send_keys(username) # user insertion in 'user' element
@@ -57,7 +63,7 @@ def botlogin (user, pwd):
     pwdelement.clear()
     pwdelement.send_keys(password) # password insertion in 'password' element
     pwdelement.send_keys(Keys.RETURN) # log in to page
-    sleep(2)
+    sleep(4)
 
 
 # function hashtag search page
@@ -78,13 +84,13 @@ def likecomment(likes=1, yourcomment=''):
     item = 1
     while item <= likes: # loop with how many photos to like
         try:
-            sleep(1)
+            sleep(2)
             driver.find_element_by_class_name('fr66n').click() # click the like button
             driver.find_element_by_class_name('Ypffh').click() # click the field to insert comment
             comment = driver.find_element_by_class_name('Ypffh')
             comment.clear()
             typephrase(random.choice(yourcomment), comment) # insert comment typing each letter
-            sleep(1)
+            sleep(2)
             # the 'publish' button name changes according to your instagram language
             driver.find_element_by_xpath('//button[contains(text(), "Publicar")]').click() # click the post 'comment' button element
             sleep(random.randint(380, 420)) # break time between likes and comment due to instagram policy against bots

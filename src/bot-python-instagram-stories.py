@@ -34,9 +34,15 @@ def botlogin (user, pwd):
     username = user # your user
     password = pwd # your password
     driver.get('https://www.instagram.com/') # instagram url
+
+    '''
+    this page / button was removed by Instagram
+
     sleep(1)
-    driver.find_element_by_xpath('//a[@href="/accounts/login/?source=auth_switcher"]').click() # click on the 'connect' button element
-    sleep(1)
+    driver.find_element_by_xpath('//a[@href="/accounts/login/?source=auth_switcher"]').click() # click on the 'connect' button 
+    '''
+    
+    sleep(2)
     userelement = driver.find_element_by_xpath('//input[@name="username"]') # 'username' input element
     userelement.clear()
     userelement.send_keys(username) # user insertion in 'user' element
@@ -44,15 +50,15 @@ def botlogin (user, pwd):
     pwdelement.clear()
     pwdelement.send_keys(password) # password insertion in 'password' element
     pwdelement.send_keys(Keys.RETURN) # log in to page
-    sleep(2)
+    sleep(4)
 
 
 # function to view the stories
 def stories():
-    sleep(1)
+    sleep(2)
     try:
         driver.find_element_by_xpath('//button[contains(text(), "Agora não")]').click() # press the notification button that appears most of the time, denying the option
-        sleep(1)
+        sleep(2)
     except:
         pass
     driver.find_element_by_xpath('//div[contains(text(), "Ver tudo")]').click() # click on the tab where the stories are
@@ -60,7 +66,7 @@ def stories():
     loadstories = '' # variable to terminate the loop without errors
     while loadstories != 0:
         try:
-            sleep(1)
+            sleep(2)
             driver.find_element_by_class_name('coreSpriteRightChevron').click() # next storie button
         except KeyboardInterrupt:
             print('\033[0;33mProgram terminated by the user!\033[m')
