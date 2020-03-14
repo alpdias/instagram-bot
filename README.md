@@ -32,7 +32,7 @@ en-US </br>
 
 * The script still does not recognize when the photos are already liked, so when going through photos already liked it will dislike. (still working on that part).
 
-![instagram](https://github.com/alpdias/bot-python-instagram/tree/master/img)
+![bot-insta](https://github.com/alpdias/bot-python-instagram/tree/master/img/bot-insta.png)
 
  ---------------------------------------------------------------------------------------------------------------------
 
@@ -70,6 +70,6 @@ en-US </br>
 
 * O script ainda não reconhece quando as fotos ja estão curtidas, então ao passar por fotos ja curtidas ele ira descurtir. (ainda trabalhando nessa parte).
 
-![instagram](https://github.com/alpdias/bot-python-instagram/tree/master/img)
+![bot-insta](https://github.com/alpdias/bot-python-instagram/tree/master/img/bot-insta.png)
  
 ----------------------------------------------------------------------------------------------------------------------
