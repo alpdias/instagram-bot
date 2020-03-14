@@ -32,6 +32,8 @@ en-US </br>
 
 * The script still does not recognize when the photos are already liked, so when going through photos already liked it will dislike. (still working on that part).
 
+![instagram](https://github.com/alpdias/bot-python-instagram/tree/master/img)
+
  ---------------------------------------------------------------------------------------------------------------------
 
 # BOT em Python para usar com o Instagram
@@ -67,5 +69,7 @@ en-US </br>
 * Os botões para publicar o comentário, ver os stories e negar as notificações descritos como 'Publicar', 'Ver tudo' e 'Agora não' no código podem variar de nome de acordo com o idioma do seu instagram, verifique no DOM o nome correto para executar o script.
 
 * O script ainda não reconhece quando as fotos ja estão curtidas, então ao passar por fotos ja curtidas ele ira descurtir. (ainda trabalhando nessa parte).
+
+![instagram](https://github.com/alpdias/bot-python-instagram/tree/master/img)
  
 ----------------------------------------------------------------------------------------------------------------------
