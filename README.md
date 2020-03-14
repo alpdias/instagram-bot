@@ -46,7 +46,7 @@ Geckodriver v0.26.0 </br>
 Codificação: -&lowast;- coding: utf-8 -&lowast;- </br>
 en-US </br>
 
-<strong>Andamento --><strong>
+<strong>Andamento --></strong>
 
 * Script para curtir: <strong>100%</strong> </br>
 * Script para curtir e comentar: <strong>100%</strong> </br>
