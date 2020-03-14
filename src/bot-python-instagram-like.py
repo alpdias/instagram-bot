@@ -39,9 +39,15 @@ def botlogin (user, pwd):
     username = user # your user
     password = pwd # your password
     driver.get('https://www.instagram.com/') # instagram url
+
+    '''
+    this page / button was removed by Instagram
+
     sleep(1)
     driver.find_element_by_xpath('//a[@href="/accounts/login/?source=auth_switcher"]').click() # click on the 'connect' button element
-    sleep(1)
+    '''
+    
+    sleep(2)
     userelement = driver.find_element_by_xpath('//input[@name="username"]') # 'username' input element
     userelement.clear()
     userelement.send_keys(username) # user insertion in 'user' element
@@ -49,7 +55,7 @@ def botlogin (user, pwd):
     pwdelement.clear()
     pwdelement.send_keys(password) # password insertion in 'password' element
     pwdelement.send_keys(Keys.RETURN) # log in to page
-    sleep(2)
+    sleep(4)
 
 
 # function hashtag search page
@@ -63,9 +69,9 @@ def like(likes=1):
     item = 1
     while item <= likes: # loop with how many photos to like
         try:
-            sleep(1)
+            sleep(2)
             driver.find_element_by_class_name('fr66n').click() # click the like button
-            sleep(random.randint(40, 60)) # break time between likes and comment due to instagram policy against bots
+            sleep(random.randint(40, 70)) # break time between likes and comment due to instagram policy against bots
             driver.find_element_by_class_name('coreSpriteRightPaginationArrow').click() # click on next photo button
             item = item + 1
         except:
