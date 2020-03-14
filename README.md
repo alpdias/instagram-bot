@@ -4,17 +4,17 @@ Python BOT to view stories, like and comment on Instagram photos using webdriver
 
 Follow me on Instagram <strong>@python.bot</strong>
 
-Python 3.8.0 </br>
-Microsoft VSCode 1.41.1 </br>
-Geckodriver v0.26.0 </br>
-Coding: -&lowast;- coding: utf-8 -&lowast;- </br>
-en-US </br>
-
 <strong>Progress --></strong>
 
 * Script to like: <strong>100%</strong></br>
 * Script to like and comment: <strong>100%</strong></br>
 * Script to see stories: <strong>Outdated</strong>
+
+Python 3.8.0 </br>
+Microsoft VSCode 1.41.1 </br>
+Geckodriver v0.26.0 </br>
+Coding: -&lowast;- coding: utf-8 -&lowast;- </br>
+en-US </br>
 
 <strong>Python modules</strong>
 
@@ -40,17 +40,17 @@ BOT em Python para ver stories, curtir e comentar fotos no Instagram, usando web
 
 Siga-me no Instagram <strong>@python.bot</strong>
 
-Python 3.8.0 </br>
-Microsoft VSCode 1.41.1 </br>
-Geckodriver v0.26.0 </br>
-Codificação: -&lowast;- coding: utf-8 -&lowast;- </br>
-en-US </br>
-
 <strong>Andamento --></strong>
 
 * Script para curtir: <strong>100%</strong> </br>
 * Script para curtir e comentar: <strong>100%</strong> </br>
 * Script para ver stories: <strong>Desatualizado</strong>
+
+Python 3.8.0 </br>
+Microsoft VSCode 1.41.1 </br>
+Geckodriver v0.26.0 </br>
+Codificação: -&lowast;- coding: utf-8 -&lowast;- </br>
+en-US </br>
 
 <strong>Módulos Python</strong>
 
