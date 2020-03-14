@@ -16,6 +16,8 @@ Geckodriver v0.26.0 </br>
 Coding: -&lowast;- coding: utf-8 -&lowast;- </br>
 en-US </br>
 
+![bot-insta](https://github.com/alpdias/bot-python-instagram/blob/master/img/bot-insta.png)
+
 <strong>Python modules</strong>
 
   > pip install selenium </br>
@@ -31,8 +33,6 @@ en-US </br>
 * Buttons for posting comment, viewing stories, and denying notifications described as 'Publicar', 'Ver tudo', and 'Agora não' in code may vary by name depending on your instagram language, please check DOM for correct name to execute the script.
 
 * The script still does not recognize when the photos are already liked, so when going through photos already liked it will dislike. (still working on that part).
-
-![bot-insta](https://github.com/alpdias/bot-python-instagram/blob/master/img/bot-insta.png)
 
  ---------------------------------------------------------------------------------------------------------------------
 
@@ -54,6 +54,8 @@ Geckodriver v0.26.0 </br>
 Codificação: -&lowast;- coding: utf-8 -&lowast;- </br>
 en-US </br>
 
+![bot-insta](https://github.com/alpdias/bot-python-instagram/blob/master/img/bot-insta.png)
+
 <strong>Módulos Python</strong>
 
  > pip install selenium </br>
@@ -69,7 +71,5 @@ en-US </br>
 * Os botões para publicar o comentário, ver os stories e negar as notificações descritos como 'Publicar', 'Ver tudo' e 'Agora não' no código podem variar de nome de acordo com o idioma do seu instagram, verifique no DOM o nome correto para executar o script.
 
 * O script ainda não reconhece quando as fotos ja estão curtidas, então ao passar por fotos ja curtidas ele ira descurtir. (ainda trabalhando nessa parte).
-
-![bot-insta](https://github.com/alpdias/bot-python-instagram/blob/master/img/bot-insta.png)
  
 ----------------------------------------------------------------------------------------------------------------------
