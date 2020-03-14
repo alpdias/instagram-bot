@@ -38,6 +38,10 @@ Geckodriver v0.26.0 </br>
 Codificação: -&lowast;- coding: utf-8 -&lowast;- </br>
 en-US </br>
 
+* Script para curtir: <strong>100%</strong> </br>
+* Script para curtir e comentar: <strong>100%</strong> </br>
+* Script para ver stories: <strong>Desatualizado</strong>
+
 <strong>Módulos Python</strong>
 
  > pip install selenium </br>
