@@ -26,7 +26,7 @@ en-US </br>
 
 * Install Python modules;
 
-* Run the command in the terminal: $ python terminal (file path / filename.py).
+* Run the command in the terminal:<strong> $ python terminal (file path / filename.py).</strong>
 
 </br>
   
@@ -74,7 +74,7 @@ en-US </br>
 
 * Instale os módulos Python;
 
-* Execute o comando no terminal: $ python (caminho do arquivo/nome do arquivo.py).
+* Execute o comando no terminal:<strong> $ python (caminho do arquivo/nome do arquivo.py).</strong>
 
 </br>
   
