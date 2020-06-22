@@ -1,6 +1,6 @@
-# Python BOT for use with Instagram
+# Python bot for use with Instagram
 
-Python BOT to view stories, like and comment on Instagram photos using webdrivers and scranping.
+Python bot to view stories, like and comment on Instagram photos using webdrivers and scranping.
 
 * Script to like: <strong>100%</strong></br>
 * Script to like and comment: <strong>100%</strong></br>
@@ -32,9 +32,9 @@ en-US </br>
 
  ---------------------------------------------------------------------------------------------------------------------
 
-# BOT em Python para usar com o Instagram
+# Bot em Python para usar com o Instagram
 
-BOT em Python para ver stories, curtir e comentar fotos no Instagram, usando webdrivers e scranping.
+Bot em Python para ver stories, curtir e comentar fotos no Instagram, usando webdrivers e scranping.
 
 * Script para curtir: <strong>100%</strong> </br>
 * Script para curtir e comentar: <strong>100%</strong> </br>
