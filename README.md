@@ -14,21 +14,23 @@ en-US </br>
 
 ![bot-insta](https://github.com/alpdias/bot-python-instagram/blob/master/img/bot-insta.png)
 
+<strong>Execution:</strong>
+ 
+ * To start and execute the code have the program "geckodriver" on the machine.
+ 
+  https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
+  
 <strong>Python modules</strong>
 
-  > pip install selenium </br>
-  
+ > pip install selenium </br>
+ 
 <strong>Note:</strong>
+ 
+* The time breaks given within the code will vary according to your internet connection, also observe the instagram policy on likes and comments by hour and day, pay attention to this so that there are no errors and to keep your account without locks.
+ 
+* The buttons within the site to post a comment, view the stories and deny the notifications described as 'Post', 'See all' and 'Not now' in the code may vary in name according to the language of your instagram, check in the DOM the correct name to run the script.
 
-* To run the script have the program "geckodriver" on the machine.
-
-  https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
-
-* Timeouts in the code will vary depending on your connection and instagram's policy on likes and comments by the hour and day, so be aware of any errors and to keep your account free of lock.
-
-* Buttons for posting comment, viewing stories, and denying notifications described as 'Publicar', 'Ver tudo', and 'Agora não' in code may vary by name depending on your instagram language, please check DOM for correct name to execute the script.
-
-* The script still does not recognize when the photos are already liked, so when going through photos already liked it will dislike. (working on that part).
+* The code still does not recognize when the photos are already liked or not, so when going through photos already liked during its execution it will dislike the photo (working on that part).
 
  ---------------------------------------------------------------------------------------------------------------------
 
@@ -48,20 +50,22 @@ en-US </br>
 
 ![bot-insta](https://github.com/alpdias/bot-python-instagram/blob/master/img/bot-insta.png)
 
+<strong>Execução:</strong>
+ 
+ * Para começar e executar o código tenha o programa "geckodriver" na máquina.
+ 
+  https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
+  
 <strong>Módulos Python</strong>
 
  > pip install selenium </br>
  
 <strong>Observação:</strong>
  
-* Para executar o script tenha o programa "geckodriver" na máquina.
+* As pausas de tempo dadas dentro do código vão variar de acordo com sua conexão de internet, observe tambem a politica do instagram sobre curtidas e comentários por hora e dia, atente-se a isso para que não ocorra erros e para manter sua conta sem bloqueios.
  
-  https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
- 
-* As pausas de tempo no código vão variar de acordo com sua conexão e a politica do instagram sobre curtidas e comentários por hora e dia, atente-se a isso caso ocorra erros e para manter sua conta sem bloqueios.
- 
-* Os botões para publicar o comentário, ver os stories e negar as notificações descritos como 'Publicar', 'Ver tudo' e 'Agora não' no código podem variar de nome de acordo com o idioma do seu instagram, verifique no DOM o nome correto para executar o script.
+* Os botões dentro do site para publicar um comentário, ver os stories e negar as notificações descritos respectivamente como 'Publicar', 'Ver tudo' e 'Agora não' no código podem variar de nome de acordo com o idioma do seu instagram, verifique no DOM o nome correto para executar o script.
 
-* O script ainda não reconhece quando as fotos ja estão curtidas, então ao passar por fotos ja curtidas ele ira descurtir. (trabalhando nessa parte).
+* O código ainda não reconhece quando as fotos ja estão curtidas ou não, então ao passar por fotos ja curtidas durante sua execução ele ira descurtir a foto (trabalhando nessa parte).
  
 ----------------------------------------------------------------------------------------------------------------------
