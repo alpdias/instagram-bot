@@ -14,6 +14,8 @@ en-US </br>
 
 ![bot-insta](https://github.com/alpdias/bot-python-instagram/blob/master/img/bot-insta.png)
 
+</br>
+
 <strong>Execution:</strong>
  
  * To start and execute the code have the program "geckodriver" on the machine;
@@ -25,12 +27,16 @@ en-US </br>
 * Install Python modules;
 
 * Run the command in the terminal: $ python terminal (file path / filename.py).
+
+</br>
   
 <strong>Python modules</strong>
 
  > pip install selenium </br>
  
-<strong>Note:</strong>
+ </br>
+ 
+<strong>Notes:</strong>
  
 * The time breaks given within the code will vary according to your internet connection, also observe the instagram policy on likes and comments by hour and day, pay attention to this so that there are no errors and to keep your account without locks;
  
@@ -56,6 +62,8 @@ en-US </br>
 
 ![bot-insta](https://github.com/alpdias/bot-python-instagram/blob/master/img/bot-insta.png)
 
+</br>
+
 <strong>Execução:</strong>
  
  * Para começar e executar o código tenha o programa "geckodriver" na máquina;
@@ -67,12 +75,16 @@ en-US </br>
 * Instale os módulos Python;
 
 * Execute o comando no terminal: $ python (caminho do arquivo/nome do arquivo.py).
+
+</br>
   
 <strong>Módulos Python</strong>
 
  > pip install selenium </br>
  
-<strong>Observação:</strong>
+ </br>
+ 
+<strong>Observações:</strong>
  
 * As pausas de tempo dadas dentro do código vão variar de acordo com sua conexão de internet, observe também a política do instagram sobre curtidas e comentários por hora e dia, atente-se a isso para que não ocorra erros e para manter sua conta sem bloqueios;
  
