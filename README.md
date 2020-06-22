@@ -2,9 +2,9 @@
 
 Python bot to view stories, like and comment on Instagram photos using webdrivers and scranping.
 
-* Script to like: <strong>100%</strong> - Updated</br>
-* Script to like and comment: <strong>100%</strong> - Updated</br>
-* Script to see stories: <strong>100%</strong> - Updated
+* Script to like: <strong>100%</strong> - Updated (2020/06/22)</br>
+* Script to like and comment: <strong>100%</strong> - Updated (2020/06/22)</br>
+* Script to see stories: <strong>100%</strong> - Updated (2020/06/22)
 
 Python 3.8.0 </br>
 Microsoft VSCode 1.41.1 </br>
@@ -50,9 +50,9 @@ en-US </br>
 
 Bot em Python para ver stories, curtir e comentar fotos no Instagram, usando webdrivers e scranping.
 
-* Script para curtir: <strong>100%</strong> - Atualizado</br>
-* Script para curtir e comentar: <strong>100%</strong> - Atualizado</br>
-* Script para ver stories: <strong>100%</strong> - Atualizado
+* Script para curtir: <strong>100%</strong> - Atualizado (22/06/2020)</br>
+* Script para curtir e comentar: <strong>100%</strong> - Atualizado (22/06/2020)</br>
+* Script para ver stories: <strong>100%</strong> - Atualizado (22/06/2020)
 
 Python 3.8.0 </br>
 Microsoft VSCode 1.41.1 </br>
