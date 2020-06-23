@@ -26,11 +26,11 @@ en-US </br>
 
 * Install Python modules;
 
-* Run the command in the terminal:<strong> $ python (file path / filename.py);</strong>
+* Run the command in the terminal:<strong> $ python (file path/filename.py);</strong>
 
-* Input 'way' is the path to geckodriver (file path / geckodriver);
+* Input <strong>'way'</strong> is the path to geckodriver (file path/geckodriver);
 
-* Input 'delay' is the time in seconds for the pages to load (with good internet use: 2 seconds).
+* Input <strong>'delay'</strong> is the time in seconds for the pages to load (with good internet use: 2 seconds).
 
 </br>
   
@@ -80,9 +80,9 @@ en-US </br>
 
 * Execute o comando no terminal:<strong> $ python (caminho do arquivo/nome do arquivo.py);</strong>
 
-* Entrada 'way' é o caminho para o geckodriver (caminho do arquivo/geckodriver);
+* Entrada <strong>'way'</strong> é o caminho para o geckodriver (caminho do arquivo/geckodriver);
 
-* Entrada 'delay' é o tempo em segundos para o carregamento das páginas (com uma boa internet use: 2 segundos).
+* Entrada <strong>'delay'</strong> é o tempo em segundos para o carregamento das páginas (com uma boa internet use: 2 segundos).
 
 </br>
   
