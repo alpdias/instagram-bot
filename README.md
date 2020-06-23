@@ -26,7 +26,7 @@ en-US </br>
 
 * Install Python modules;
 
-* Run the command in the terminal:<strong> $ python (file path/filename.py);</strong>
+* Run the command in the terminal:<strong> $ python (file path/filename.py)</strong>;
 
 * Input <strong>'way'</strong> is the path to geckodriver (file path/geckodriver);
 
@@ -78,7 +78,7 @@ en-US </br>
 
 * Instale os módulos Python;
 
-* Execute o comando no terminal:<strong> $ python (caminho do arquivo/nome do arquivo.py);</strong>
+* Execute o comando no terminal:<strong> $ python (caminho do arquivo/nome do arquivo.py)</strong>;
 
 * Entrada <strong>'way'</strong> é o caminho para o geckodriver (caminho do arquivo/geckodriver);
 
