@@ -48,7 +48,6 @@ except:
 
 # function to access the login page and log in
 def botlogin (user, pwd):
-
     username = user # your user
     password = pwd # your password
 
@@ -59,7 +58,6 @@ def botlogin (user, pwd):
     this page / button was removed by Instagram
     driver.find_element_by_xpath('//a[@href="/accounts/login/?source=auth_switcher"]').click() # click on the 'connect' button element
     '''
-    
     
     userelement = driver.find_element_by_xpath('//input[@name="username"]') # 'username' input element
     userelement.clear()
@@ -75,13 +73,11 @@ def botlogin (user, pwd):
 
 # function hashtag search page
 def findhashtag(hashtag):
-
     driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
 
 
 # function to type letter by letter
 def typephrase(comment, field):
-
     for letter in comment: # commentary and lyrics
         field.send_keys(letter) # type the letter in the field
         sleep(0.09) # input time of each letter
@@ -89,12 +85,12 @@ def typephrase(comment, field):
 
 # function to like the photos
 def likecomment(likes=1, comment=''):
-
     driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
+    
     item = 1
 
     while item <= likes: # loop with how many photos to like
-
+        
         try:
             sleep(delay)
             driver.find_element_by_class_name('fr66n').click() # click the like button
