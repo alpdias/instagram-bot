@@ -44,7 +44,7 @@ en-US </br>
  
 * The time breaks given within the code will vary according to your internet connection, also observe the instagram policy on likes and comments by hour and day, pay attention to this so that there are no errors and to keep your account without locks;
  
-* The buttons within the site to post a comment, view the stories and deny the notifications described as 'Post', 'See all' and 'Not now' in the code may vary in name according to the language of your instagram, check in the DOM the correct name to run the script;
+* The buttons within the site to post a comment and deny the notifications described as 'Publish' and 'Not Now' in the code can vary in name according to the language of your instagram, check the DOM for the correct name to run the script;
 
 * The code still does not recognize when the photos are already liked or not, so when going through photos already liked during its execution it will dislike the photo (working on that part).
 
@@ -96,7 +96,7 @@ en-US </br>
  
 * As pausas de tempo dadas dentro do código vão variar de acordo com sua conexão de internet, observe também a política do instagram sobre curtidas e comentários por hora e dia, atente-se a isso para que não ocorra erros e para manter sua conta sem bloqueios;
  
-* Os botões dentro do site para publicar um comentário, ver os stories e negar as notificações descritos respectivamente como 'Publicar', 'Ver tudo' e 'Agora não' no código podem variar de nome de acordo com o idioma do seu instagram, verifique no DOM o nome correto para executar o script;
+* Os botões dentro do site para publicar um comentário e negar as notificações descritos respectivamente como 'Publicar' e 'Agora não' no código podem variar de nome de acordo com o idioma do seu instagram, verifique no DOM o nome correto para executar o script;
 
 * O código ainda não reconhece quando as fotos já estão curtidas ou não, então ao passar por fotos já curtidas durante sua execução ele ira descurtir a foto (trabalhando nessa parte).
  
