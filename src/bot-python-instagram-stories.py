@@ -18,7 +18,7 @@ print('')
 print('\033[0;32mCONFIGURATION\033[m')
 print('')
 way = str(input('Way: ')) # way to geckodriver
-delay = int(input('Delay: ')) # loading delay time
+delay = int(input('Delay (just number): ')) # loading delay time
 
 # input info for bot 
 os.system('cls') # for linux user 'clear' and for windows use 'cls'
@@ -41,7 +41,6 @@ except:
 
 # function to access the login page and log in
 def botlogin (user, pwd):
-
     username = user # your user
     password = pwd # your password
 
@@ -67,16 +66,17 @@ def botlogin (user, pwd):
 
 # function to view the stories
 def stories():
-
     try:
         driver.find_element_by_xpath('//button[contains(text(), "Agora não")]').click() # press the notification button that appears most of the time, denying the option
         sleep(delay)
+        
     except:
         pass
 
     try:
         driver.find_element_by_xpath('//button[contains(text(), "Agora não")]').click() # press the notification button that appears most of the time, denying the option
         sleep(delay)
+        
     except:
         pass
 
@@ -91,9 +91,11 @@ def stories():
 
         try:
             driver.find_element_by_class_name('coreSpriteRightChevron').click() # next storie button
+            
         except KeyboardInterrupt:
             print('\033[0;33mProgram terminated by the user!\033[m')
             loadstories = 0
+            
         except:
             print('\033[0;33mEND! No more stories to view\033[m') 
             loadstories = 0
