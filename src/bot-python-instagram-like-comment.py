@@ -18,7 +18,7 @@ print('')
 print('\033[0;32mCONFIGURATION\033[m')
 print('')
 way = str(input('Way: ')) # way to geckodriver
-delay = int(input('Delay: ')) # loading delay time
+delay = int(input('Delay (just number): ')) # loading delay time
 
 # input login for bot 
 os.system('cls') # for linux user 'clear' and for windows use 'cls'
