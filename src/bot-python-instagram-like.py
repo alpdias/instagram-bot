@@ -18,7 +18,7 @@ print('')
 print('\033[0;32mCONFIGURATION\033[m')
 print('')
 way = str(input('Way: ')) # way to geckodriver
-delay = int(input('Delay: ')) # loading delay time
+delay = int(input('Delay (just number): ')) # loading delay time
 
 # input login for bot 
 os.system('cls') # for linux user 'clear' and for windows use 'cls'
@@ -47,7 +47,6 @@ except:
 
 # function to access the login page and log in
 def botlogin (user, pwd):
-
     username = user # your user
     password = pwd # your password
     
@@ -58,7 +57,6 @@ def botlogin (user, pwd):
     this page / button was removed by Instagram
     driver.find_element_by_xpath('//a[@href="/accounts/login/?source=auth_switcher"]').click() # click on the 'connect' button element
     '''
-    
     
     userelement = driver.find_element_by_xpath('//input[@name="username"]') # 'username' input element
     userelement.clear()
@@ -74,13 +72,11 @@ def botlogin (user, pwd):
 
 # function hashtag search page
 def findhashtag(hashtag):
-
     driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
 
 
 # function to like the photos
 def like(likes=1):
-
     driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
 
     item = 1
@@ -93,6 +89,7 @@ def like(likes=1):
             sleep(random.randint(40, 70)) # break time between likes and comment due to instagram policy against bots
             driver.find_element_by_class_name('coreSpriteRightPaginationArrow').click() # click on next photo button
             item = item + 1
+            
         except:
             sleep(60) # if connection errors occur
 
