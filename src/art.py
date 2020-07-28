@@ -7,11 +7,13 @@ Created in 07/2020
 
 # imported libraries
 from pyfiglet import Figlet
+from time import sleep
 
 # function to print text in ascii art
-def art():
-    f = Figlet(font='cricket')
+def artName():
+    f = Figlet(font='slant')
     instagramName = f.renderText('Instagram bot')
     
-    return instagramName
+    print(instagramName)
+    sleep(2)
 
