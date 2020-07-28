@@ -42,9 +42,12 @@ print('')
 
 # load browser drive in to var and open
 try:
-    driver = webdriver.Firefox(executable_path=f'{way}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
+    driver = webdriver.Firefox(executable_path=f'{way}geckodriver') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
 except:
-    print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
+    try:
+        driver = webdriver.Firefox(executable_path=f'{way}geckodriver')
+    except:
+        print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
 
 # function to access the login page and log in
 def botlogin (user, pwd):
