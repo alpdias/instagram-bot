@@ -37,6 +37,7 @@ en-US </br>
 <strong>Python modules</strong>
 
  > pip install selenium </br>
+ > pip install pyfiglet </br>
  
  </br>
  
@@ -89,6 +90,7 @@ en-US </br>
 <strong>Módulos Python</strong>
 
  > pip install selenium </br>
+ > pip install pyfiglet </br>
  
  </br>
  
