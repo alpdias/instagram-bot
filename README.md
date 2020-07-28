@@ -26,9 +26,9 @@ en-US </br>
 
 * Install Python modules;
 
-* Run the command in the terminal:<strong> $ python file_path/bot-instagram.py</strong>;
+* Run the command in the terminal:<strong> $ python bot-instagram.py</strong>;
 
-* Input <strong>'way'</strong> is the path to geckodriver<strong> $ file_path/geckodriver</strong>;
+* Input <strong>'way'</strong> is the path to geckodriver;
 
 * Input <strong>'delay'</strong> is the time in seconds for the pages to load (with good internet use: 2 seconds).
 
@@ -79,9 +79,9 @@ en-US </br>
 
 * Instale os módulos Python;
 
-* Execute o comando no terminal:<strong> $ python caminho_do_arquivo/bot-instagram.py</strong>;
+* Execute o comando no terminal:<strong> $ python bot-instagram.py</strong>;
 
-* Entrada <strong>'way'</strong> é o caminho para o geckodriver<strong> $ caminho_do_arquivo/geckodriver</strong>;
+* Entrada <strong>'way'</strong> é o caminho para o geckodriver;
 
 * Entrada <strong>'delay'</strong> é o tempo em segundos para o carregamento das páginas (com uma boa internet use: 2 segundos).
 

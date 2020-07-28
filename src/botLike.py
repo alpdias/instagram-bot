@@ -13,7 +13,7 @@ import random
 import os
 
 def functionLike():
-    
+
     # input for config bot
     os.system('cls') # for linux user 'clear' and for windows use 'cls'
     print('')
@@ -43,10 +43,10 @@ def functionLike():
 
     # load browser drive in to var and open
     try:
-        driver = webdriver.Firefox(executable_path=f'{way}geckodriver') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
+        driver = webdriver.Firefox(executable_path=f'{way}/geckodriver') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
     except:
         try:
-            driver = webdriver.Firefox(executable_path=f'{way}geckodriver')
+            driver = webdriver.Firefox(executable_path=f'{way}\geckodriver')
         except:
             print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
 

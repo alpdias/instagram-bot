@@ -12,3 +12,6 @@ import botComment
 import botStories
 
 art.artName()
+#botLike.functionLike()
+#botComment.functionComment()
+#botStories.functionStories()
