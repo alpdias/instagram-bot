@@ -8,9 +8,12 @@ Created in 07/2020
 # imported libraries
 import os
 import art
+import platform
 import botLike
 import botComment
 import botStories
+
+mySystem = platform.system() # which operating system is running
 
 while True:
     
@@ -22,17 +25,18 @@ while True:
         print(f'\033[0;34m[{indice}]\033[m {lista}') # print the list of options
 
     print('')
+    print('(to finish press Ctrl + C)')
     selected = int(input('Select a function for the bot: ')) # receive the function that will be started
     print('')
 
     if selected == 0:
-        botLike.functionLike() # bot to like
+        botLike.functionLike(mySystem) # bot to like
 
     elif selected == 1:
-        botComment.functionComment() # bot to like and comment
+        botComment.functionComment(mySystem) # bot to like and comment
 
     elif selected == 2:
-        botStories.functionStories() # bot to see stories
+        botStories.functionStories(mySystem) # bot to see stories
 
     else:
       print('Option invalid, please try again!')

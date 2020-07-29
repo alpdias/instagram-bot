@@ -13,10 +13,17 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-def functionStories():
+def functionStories(mySystem):
+
+    # check the system
+    if mySystem == 'Linux': 
+        mySystem = 'clear'
+
+    else:
+        mySystem = 'cls'
 
     # input for config bot
-    os.system('cls') # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
     art.artName(0)
     print('')
     print('\033[0;32mCONFIGURATION\033[m')
@@ -25,7 +32,7 @@ def functionStories():
     delay = int(input('Delay (just number): ')) # loading delay time
 
     # input info for bot 
-    os.system('cls') # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
     art.artName(0)
     print('')
     print('\033[0;32mLOGIN INFORMATION\033[m')
@@ -33,7 +40,7 @@ def functionStories():
     username = str(input('User: ')) # your user
     password = str(input('Password: ')) # your password
 
-    os.system('cls') # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
     art.artName(0)
     print('')
     print('Loading...')
