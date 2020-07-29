@@ -25,7 +25,7 @@ while True:
         print(f'\033[0;34m[{indice}]\033[m {lista}') # print the list of options
 
     print('')
-    print('(to finish press Ctrl + C)')
+    print('\033[0;33m(to finish press Ctrl + C)\033[m')
     selected = int(input('Select a function for the bot: ')) # receive the function that will be started
     print('')
 
