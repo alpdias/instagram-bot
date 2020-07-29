@@ -11,11 +11,13 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 import random
 import os
+import art
 
 def functionLike():
 
     # input for config bot
     os.system('cls') # for linux user 'clear' and for windows use 'cls'
+    art.artName(0)
     print('')
     print('\033[0;32mCONFIGURATION\033[m')
     print('')
@@ -24,6 +26,7 @@ def functionLike():
 
     # input login for bot 
     os.system('cls') # for linux user 'clear' and for windows use 'cls'
+    art.artName(0)
     print('')
     print('\033[0;32mLOGIN INFORMATION\033[m')
     print('')
@@ -32,6 +35,7 @@ def functionLike():
 
     # input info for bot 
     os.system('cls') # for linux user 'clear' and for windows use 'cls'
+    art.artName(0)
     print('')
     print('\033[0;32mBOT INFORMATION\033[m')
     print('')
