@@ -10,10 +10,10 @@ from pyfiglet import Figlet
 from time import sleep
 
 # function to print text in ascii art
-def artName():
+def artName(timeSleep=0):
     f = Figlet(font='slant')
     instagramName = f.renderText('Instagram bot')
     
     print(instagramName)
-    sleep(2)
+    sleep(timeSleep)
 
