@@ -6,8 +6,8 @@ Created in 07/2020
 '''
 
 # imported libraries
-from pyfiglet import Figlet
 from time import sleep
+from pyfiglet import Figlet
 
 # function to print text in ascii art
 def artName(timeSleep=0):
