@@ -6,12 +6,12 @@ Created in 12/2019
 '''
 
 # imported libraries
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from time import sleep
-import random
 import os
 import art
+import random
+from time import sleep
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
 def functionLike():
 
