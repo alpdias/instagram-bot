@@ -12,7 +12,7 @@ import botLike
 import botComment
 import botStories
 
-art.artName()
+art.artName(2)
 
 menu = ['Like', 'Comment and Like', 'View Stories']
 
