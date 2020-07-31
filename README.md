@@ -102,7 +102,7 @@ en-US </br>
 
 * O tempo de execução da função de 'comentários' vai variar entre 6 a 7 minutos, devido a política do instagram sobre mesmas funções que são executadas repetitivamente, as demais funções são executadas de acordo com a entrada 'delay';
 
-* Ao executar a função para ver 'stories', caso o primeiro item seja uma 'live' ele não vai será executado e apresentará um erro (trabalhando nessa parte);
+* Ao executar a função para ver 'stories', caso o primeiro item seja uma 'live' ele não vai ser executado e apresentará um erro (trabalhando nessa parte);
  
 * As pausas de tempo dadas dentro do código vão variar de acordo com sua conexão de internet, observe também a política do instagram sobre curtidas e comentários por hora e dia, atente-se a isso para que não ocorra erros e para manter sua conta sem bloqueios;
  
