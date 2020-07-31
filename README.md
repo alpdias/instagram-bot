@@ -26,7 +26,7 @@ en-US </br>
 
 * Install Python modules;
 
-* Run the command in the terminal:<strong> $ python bot-instagram.py</strong>;
+* Run the command in the terminal:<strong> python bot-instagram.py</strong>;
 
 * Input <strong>'way'</strong> is the path to geckodriver;
 
@@ -79,7 +79,7 @@ en-US </br>
 
 * Instale os módulos Python;
 
-* Execute o comando no terminal:<strong> $ python bot-instagram.py</strong>;
+* Execute o comando no terminal:<strong> python bot-instagram.py</strong>;
 
 * Entrada <strong>'way'</strong> é o caminho para o geckodriver;
 
