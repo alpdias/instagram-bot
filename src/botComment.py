@@ -156,3 +156,6 @@ def functionComment(mySystem):
     print('Finish!')
     print('')
 
+    press = input('\033[0;34mpress "enter" to continue\033[m ')
+    os.system(mySystem) 
+
