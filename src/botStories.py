@@ -10,6 +10,7 @@ import os
 import art
 import random
 from time import sleep
+from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
@@ -18,9 +19,13 @@ def functionStories(mySystem):
     # check the system
     if mySystem == 'Linux': 
         mySystem = 'clear'
+        way = Path('geckodriver/linux') # path to the file
+        geckoFile = way / 'geckodriver' # way to geckodriver
 
     else:
         mySystem = 'cls'
+        way = Path('geckodriver/windows') # path to the file
+        geckoFile = way / 'geckodriver.exe' # way to geckodriver
 
     # input for config bot
     os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
@@ -28,7 +33,6 @@ def functionStories(mySystem):
     print('')
     print('\033[0;32mCONFIGURATION\033[m')
     print('')
-    way = str(input('Way: ')) # way to geckodriver
     delay = int(input('Delay (just number): ')) # loading delay time
 
     # input info for bot 
@@ -48,15 +52,17 @@ def functionStories(mySystem):
 
     # load browser drive in to var and open
     try:
-        driver = webdriver.Firefox(executable_path=f'{way}/geckodriver') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
+        driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
     except:
         try:
-            driver = webdriver.Firefox(executable_path=f'{way}\geckodriver')
+            driver = webdriver.Firefox(executable_path=f'{geckoFile}')
         except:
             print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
 
+
     # function to access the login page and log in
     def botlogin (user, pwd):
+
         username = user # your user
         password = pwd # your password
 
@@ -82,6 +88,7 @@ def functionStories(mySystem):
 
     # function to view the stories
     def stories():
+
         try:
             driver.find_element_by_xpath('//button[contains(text(), "Agora não")]').click() # press the notification button that appears most of the time, denying the option
             sleep(delay)

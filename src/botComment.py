@@ -10,6 +10,7 @@ import os
 import art
 import random
 from time import sleep
+from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
@@ -18,9 +19,13 @@ def functionComment(mySystem):
     # check the system
     if mySystem == 'Linux': 
         mySystem = 'clear'
+        way = Path('geckodriver/linux') # path to the file
+        geckoFile = way / 'geckodriver' # way to geckodriver
 
     else:
         mySystem = 'cls'
+        way = Path('geckodriver/windows') # path to the file
+        geckoFile = way / 'geckodriver.exe' # way to geckodriver
 
     # input for config bot
     os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
@@ -28,7 +33,6 @@ def functionComment(mySystem):
     print('')
     print('\033[0;32mCONFIGURATION\033[m')
     print('')
-    way = str(input('Way: ')) # way to geckodriver
     delay = int(input('Delay (just number): ')) # loading delay time
 
     # input login for bot 
@@ -55,15 +59,17 @@ def functionComment(mySystem):
 
     # load browser drive in to var and open
     try:
-        driver = webdriver.Firefox(executable_path=f'{way}/geckodriver') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
+        driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
     except:
         try:
-            driver = webdriver.Firefox(executable_path=f'{way}\geckodriver')
+            driver = webdriver.Firefox(executable_path=f'{geckoFile}')
         except:
             print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
 
+
     # function to access the login page and log in
     def botlogin (user, pwd):
+        
         username = user # your user
         password = pwd # your password
 
@@ -89,11 +95,13 @@ def functionComment(mySystem):
 
     # function hashtag search page
     def findhashtag(hashtag):
+
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
 
 
     # function to type letter by letter
     def typephrase(comment, field):
+
         for letter in comment: # commentary and lyrics
             field.send_keys(letter) # type the letter in the field
             sleep(0.09) # input time of each letter
@@ -101,6 +109,7 @@ def functionComment(mySystem):
 
     # function to like the photos
     def likecomment(likes=1, comment=''):
+
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
         
         item = 1
@@ -126,7 +135,6 @@ def functionComment(mySystem):
                 sleep(60) # if connection errors occur
 
         print(f'Number of photos liked and commented: \033[0;33m{item - 1}\033[m')
-
 
     # running function for login
     try:
