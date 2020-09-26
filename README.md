@@ -2,9 +2,9 @@
 
 Python bot to view stories, like and comment on Instagram photos using webdrivers and scranping.
 
-* Script to like: <strong>100%</strong> - Updated (2020/07/29)</br>
-* Script to like and comment: <strong>100%</strong> - Updated (2020/07/29)</br>
-* Script to see stories: <strong>100%</strong> - Updated (2020/07/29)
+* Script to like: <strong>100%</strong> - Updated (2020/09/26)</br>
+* Script to like and comment: <strong>100%</strong> - Updated (2020/09/26)</br>
+* Script to see stories: <strong>100%</strong> - Updated (2020/09/26)
 
 Python 3.8.0 </br>
 Microsoft VSCode 1.41.1 </br>
@@ -17,18 +17,14 @@ en-US </br>
 </br>
 
 <strong>Execution:</strong>
- 
- * To start and execute the code have the program "geckodriver" on the machine;
- 
-  https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
   
 * Have the latest version of Python 3 installed on the machine;
 
 * Install Python modules;
 
-* Run the command in the terminal:<strong> python bot-instagram.py</strong>;
+* To start and run the code, go to geckodriver and choose the directory for your system and unzip the "geckodriver";
 
-* Input <strong>'way'</strong> is the path to geckodriver;
+* Run the command in the terminal:<strong> python bot-instagram.py</strong>;
 
 * Input <strong>'delay'</strong> is the time in seconds for the pages to load (with good internet use: 2 seconds).
 
@@ -59,9 +55,9 @@ en-US </br>
 
 Bot em Python para ver stories, curtir e comentar fotos no Instagram, usando webdrivers e scranping.
 
-* Script para curtir: <strong>100%</strong> - Atualizado (29/07/2020)</br>
-* Script para curtir e comentar: <strong>100%</strong> - Atualizado (29/07/2020)</br>
-* Script para ver stories: <strong>100%</strong> - Atualizado (29/07/2020)
+* Script para curtir: <strong>100%</strong> - Atualizado (26/09/2020)</br>
+* Script para curtir e comentar: <strong>100%</strong> - Atualizado (26/09/2020)</br>
+* Script para ver stories: <strong>100%</strong> - Atualizado (26/09/2020)
 
 Python 3.8.0 </br>
 Microsoft VSCode 1.41.1 </br>
@@ -74,18 +70,14 @@ en-US </br>
 </br>
 
 <strong>Execução:</strong>
- 
- * Para começar e executar o código tenha o programa "geckodriver" na máquina;
- 
-  https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
   
 * Tenha a última versão do Python 3 instalada na máquina;
 
 * Instale os módulos Python;
 
-* Execute o comando no terminal:<strong> python bot-instagram.py</strong>;
+* Para começar e executar o código entre em geckodriver e escolha o diretório referente ao seu sistema e descompacte o proagrama "geckodriver";
 
-* Entrada <strong>'way'</strong> é o caminho para o geckodriver;
+* Execute o comando no terminal:<strong> python bot-instagram.py</strong>;
 
 * Entrada <strong>'delay'</strong> é o tempo em segundos para o carregamento das páginas (com uma boa internet use: 2 segundos).
 
