@@ -19,7 +19,7 @@ def functionComment(mySystem):
     # check the system
     if mySystem == 'Linux': 
         mySystem = 'clear'
-        way = Path('geckodriver/linux') # path to the file
+        way = Path('geckodriver/linux/geckodriver-v0.26.0-linux64') # path to the file
         geckoFile = way / 'geckodriver' # way to geckodriver
 
     else:
