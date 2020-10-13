@@ -1,6 +1,6 @@
-# Python bot for use with Instagram
+# Python bot to use with Instagram
 
-Python bot to view stories, like and comment on Instagram photos using webdrivers and scranping.
+Python bot to view stories, like and comment on photos on Instagram, using webdrivers and scranping.
 
 * Script to like: <strong>100%</strong> - Updated (2020/09/26)</br>
 * Script to like and comment: <strong>100%</strong> - Updated (2020/09/26)</br>
@@ -18,15 +18,15 @@ en-US </br>
 
 <strong>Execution:</strong>
   
-* Have the latest version of Python 3 installed on the machine;
+* Have Python 3 or higher installed on the machine;
 
 * Install Python modules;
 
-* To start and run the code, go to geckodriver and choose the directory for your system and unzip the "geckodriver";
+* To start and run the code enter the geckodriver directory and choose the directory for your system and unzip the "geckodriver" program;
 
 * Run the command in the terminal:<strong> python bot-instagram.py</strong>;
 
-* Input <strong>'delay'</strong> is the time in seconds for the pages to load (with good internet use: 2 seconds).
+* The <strong>'delay'</strong> entry is the time in seconds for the pages to load (with good internet use: 2).
 
 </br>
   
@@ -51,9 +51,9 @@ en-US </br>
 
  ---------------------------------------------------------------------------------------------------------------------
 
-# Bot em Python para usar com o Instagram
+# Python bot para usar com o Instagram
 
-Bot em Python para ver stories, curtir e comentar fotos no Instagram, usando webdrivers e scranping.
+Python bot para ver stories, curtir e comentar fotos no Instagram, usando webdrivers e scranping.
 
 * Script para curtir: <strong>100%</strong> - Atualizado (26/09/2020)</br>
 * Script para curtir e comentar: <strong>100%</strong> - Atualizado (26/09/2020)</br>
@@ -71,15 +71,15 @@ en-US </br>
 
 <strong>Execução:</strong>
   
-* Tenha a última versão do Python 3 instalada na máquina;
+* Tenha o Python 3 ou superior instalado na máquina;
 
 * Instale os módulos Python;
 
-* Para começar e executar o código entre em geckodriver e escolha o diretório referente ao seu sistema e descompacte o proagrama "geckodriver";
+* Para começar e executar o código entre no diretório geckodriver e escolha o diretório referente ao seu sistema e descompacte o programa "geckodriver";
 
 * Execute o comando no terminal:<strong> python bot-instagram.py</strong>;
 
-* Entrada <strong>'delay'</strong> é o tempo em segundos para o carregamento das páginas (com uma boa internet use: 2 segundos).
+* A entrada <strong>'delay'</strong> é o tempo em segundos para o carregamento das páginas (com uma boa internet use: 2).
 
 </br>
   
