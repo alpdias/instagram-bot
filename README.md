@@ -24,7 +24,7 @@ en-US </br>
 
 * To start and run the code enter the geckodriver directory and choose the directory for your system and unzip the "geckodriver" program;
 
-* Run the command in the terminal:<strong> python bot-instagram.py</strong>;
+* Run the command in the terminal:<strong> python botInstagram.py</strong>;
 
 * The <strong>'delay'</strong> entry is the time in seconds for the pages to load (with good internet use: 2).
 
@@ -77,7 +77,7 @@ en-US </br>
 
 * Para começar e executar o código entre no diretório geckodriver e escolha o diretório referente ao seu sistema e descompacte o programa "geckodriver";
 
-* Execute o comando no terminal:<strong> python bot-instagram.py</strong>;
+* Execute o comando no terminal:<strong> python botInstagram.py</strong>;
 
 * A entrada <strong>'delay'</strong> é o tempo em segundos para o carregamento das páginas (com uma boa internet use: 2).
 
