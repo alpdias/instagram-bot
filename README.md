@@ -39,6 +39,8 @@ en-US </br>
  
 <strong>Notes:</strong>
 
+* If there is an error when running the script, before opening an 'Issues' run the script <strong>'botError.py'</strong> to check the error more specifically and thus facilitate the resolution of your problem.
+
 * The execution time of the 'comments' function will vary between 6 to 7 minutes, due to the instagram policy on the same functions that are executed repeatedly, the other functions are executed according to the 'delay' entry;
 
 * When executing the function to see 'stories', if the first item is a 'live' it will not be executed and will present an error (working on that part);
@@ -91,6 +93,8 @@ en-US </br>
  </br>
  
 <strong>Observações:</strong>
+
+* Caso apresente algum erro ao rodar o script, antes de abrir uma 'Issues' execute o script <strong>'botError.py'</strong> para verificar o erro de forma mais específica e assim facilitar a resolução do seu problema. 
 
 * O tempo de execução da função de 'comentários' vai variar entre 6 a 7 minutos, devido a política do instagram sobre mesmas funções que são executadas repetitivamente, as demais funções são executadas de acordo com a entrada 'delay';
 
