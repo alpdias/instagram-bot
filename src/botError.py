@@ -351,8 +351,8 @@ def functionStories(mySystem):
         
         driver = webdriver.Firefox(executable_path=f'{geckoFile}')
 
-    # function to access the login page and log in
-    def botlogin (user, pwd):
+    
+    def botlogin (user, pwd): # function to access the login page and log in
 
         username = user # your user
         password = pwd # your password
@@ -377,8 +377,7 @@ def functionStories(mySystem):
         sleep(4)
 
 
-    # function to view the stories
-    def stories():
+    def stories(): # function to view the stories
 
         try:
             
