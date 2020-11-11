@@ -18,11 +18,13 @@ def functionComment(mySystem):
 
     # check the system
     if mySystem == 'Linux': 
+        
         mySystem = 'clear'
         way = Path('geckodriver/linux/geckodriver-v0.26.0-linux64') # path to the file
         geckoFile = way / 'geckodriver' # way to geckodriver
 
     else:
+        
         mySystem = 'cls'
         way = Path('geckodriver/windows') # path to the file
         geckoFile = way / 'geckodriver.exe' # way to geckodriver
@@ -30,45 +32,57 @@ def functionComment(mySystem):
     # input for config bot
     os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
     art.artName(0)
+    
     print('')
     print('\033[0;32mCONFIGURATION\033[m')
     print('')
+    
     delay = int(input('Delay (just number): ')) # loading delay time
 
     # input login for bot 
     os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
     art.artName(0)
+    
     print('')
     print('\033[0;32mLOGIN INFORMATION\033[m')
     print('')
+    
     username = str(input('User: ')) # your user
     password = str(input('Password: ')) # your password
 
     # input info for bot
     os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
     art.artName(0)
+    
     print('')
     print('\033[0;32mBOT INFORMATION\033[m')
     print('')
+    
     hashtag = str(input('Hashtag: ')) # hashtag
     likes = int(input('Amount: ')) # amount of photos to like
     comment = str(input('Comment: ')) # comment in photos
+    
     print('')
     print('Loading...')
     print('')
 
     # load browser drive in to var and open
     try:
+        
         driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
+        
     except:
+        
         try:
+            
             driver = webdriver.Firefox(executable_path=f'{geckoFile}')
+            
         except:
+            
             print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
 
 
-    # function to access the login page and log in
-    def botlogin (user, pwd):
+    def botlogin (user, pwd): # function to access the login page and log in
         
         username = user # your user
         password = pwd # your password
@@ -93,30 +107,28 @@ def functionComment(mySystem):
         sleep(delay + 2)
 
 
-    # function hashtag search page
-    def findhashtag(hashtag):
+    def findhashtag(hashtag): # function hashtag search page
 
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
 
 
-    # function to type letter by letter
-    def typephrase(comment, field):
+    def typephrase(comment, field): # function to type letter by letter
 
         for letter in comment: # commentary and lyrics
+            
             field.send_keys(letter) # type the letter in the field
             sleep(0.09) # input time of each letter
 
 
-    # function to like the photos
-    def likecomment(likes=1, comment=''):
+    def likecomment(likes=1, comment=''): # function to like the photos
 
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
         
         item = 1
-
         while item <= likes: # loop with how many photos to like
             
             try:
+                
                 sleep(delay)
                 driver.find_element_by_class_name('fr66n').click() # click the like button
                 driver.find_element_by_class_name('Ypffh').click() # click the field to insert comment
@@ -132,32 +144,49 @@ def functionComment(mySystem):
                 item = item + 1
 
             except:
+                
                 sleep(60) # if connection errors occur
 
         print(f'Number of photos liked and commented: \033[0;33m{item - 1}\033[m')
 
+        
     # running function for login
     try:
+        
         botlogin(username, password)
+        
     except KeyboardInterrupt:
+        
         print('\033[0;33mProgram terminated by the user!\033[m')
+        
     except:
+        
         print('\033[0;31mUNEXPECTED ERROR ON LOGIN\033[m, please try again and verify your connection!')
 
     # executing function search hastag
     try:
+        
         findhashtag(hashtag)
+        
     except KeyboardInterrupt:
+        
         print('\033[0;33mProgram terminated by the user!\033[m')
+        
     except:
+        
         print('\033[0;31mUNEXPECTED ERROR ON HASHTAG PAGE\033[m, please try again and verify your connection!')
 
     # executing function to enjoy and comment
     try:
+        
         likecomment(likes, comment)
+        
     except KeyboardInterrupt:
+        
         print('\033[0;33mProgram terminated by the user!\033[m')
+        
     except:
+        
         print('\033[0;31mUNEXPECTED ERROR ON COMMENT\033[m, please try again and verify your connection!')
 
     print('')
