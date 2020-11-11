@@ -18,11 +18,13 @@ def functionStories(mySystem):
 
     # check the system
     if mySystem == 'Linux': 
+        
         mySystem = 'clear'
         way = Path('geckodriver/linux/geckodriver-v0.26.0-linux64') # path to the file
         geckoFile = way / 'geckodriver' # way to geckodriver
 
     else:
+        
         mySystem = 'cls'
         way = Path('geckodriver/windows') # path to the file
         geckoFile = way / 'geckodriver.exe' # way to geckodriver
@@ -30,33 +32,44 @@ def functionStories(mySystem):
     # input for config bot
     os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
     art.artName(0)
+    
     print('')
     print('\033[0;32mCONFIGURATION\033[m')
     print('')
+    
     delay = int(input('Delay (just number): ')) # loading delay time
 
     # input info for bot 
     os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
     art.artName(0)
+    
     print('')
     print('\033[0;32mLOGIN INFORMATION\033[m')
     print('')
+    
     username = str(input('User: ')) # your user
     password = str(input('Password: ')) # your password
 
     os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
     art.artName(0)
+    
     print('')
     print('Loading...')
     print('')
 
     # load browser drive in to var and open
     try:
+        
         driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
+        
     except:
+        
         try:
+            
             driver = webdriver.Firefox(executable_path=f'{geckoFile}')
+            
         except:
+            
             print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
 
 
@@ -86,10 +99,10 @@ def functionStories(mySystem):
         sleep(4)
 
 
-    # function to view the stories
-    def stories():
+    def stories(): # function to view the stories
 
         try:
+            
             driver.find_element_by_xpath('//button[contains(text(), "Agora não")]').click() # press the notification button that appears most of the time, denying the option
             sleep(delay)
             
@@ -97,6 +110,7 @@ def functionStories(mySystem):
             pass
 
         try:
+            
             driver.find_element_by_xpath('//button[contains(text(), "Agora não")]').click() # press the notification button that appears most of the time, denying the option
             sleep(delay)
             
@@ -113,31 +127,44 @@ def functionStories(mySystem):
             sleep(delay)
 
             try:
+                
                 driver.find_element_by_class_name('coreSpriteRightChevron').click() # next storie button
                 
             except KeyboardInterrupt:
+                
                 print('\033[0;33mProgram terminated by the user!\033[m')
                 loadstories = 0
                 
             except:
+                
                 print('\033[0;33mEND! No more stories to view\033[m') 
                 loadstories = 0
 
 
     # running function for login
     try:
+        
         botlogin(username, password)
+        
     except KeyboardInterrupt:
+        
         print('\033[0;33mProgram terminated by the user!\033[m')
+        
     except:
+        
         print('\033[0;31mUNEXPECTED ERROR ON LOGIN\033[m, please try again and verify your connection!')
 
     # running function to see the stories
     try:
+        
         stories()
+        
     except KeyboardInterrupt:
+        
         print('\033[0;33mProgram terminated by the user!\033[m')
+        
     except:
+        
         print('\033[0;31mUNEXPECTED ERROR ON STORIES\033[m, please try again and verify your connection!')
 
     print('')
