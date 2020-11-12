@@ -12,6 +12,7 @@ import platform
 import botLike
 import botComment
 import botStories
+import botDraw
 
 mySystem = platform.system() # which operating system is running
 
@@ -19,7 +20,7 @@ while True:
     
     art.artName(2)
 
-    menu = ['Like', 'Comment and Like', 'View Stories']
+    menu = ['Like', 'Comment and Like', 'View Stories', 'Comment for Draw']
 
     for indice, lista in enumerate(menu): # loop to generate an index in the list of options
         
@@ -43,6 +44,10 @@ while True:
     elif selected == 2:
         
         botStories.functionStories(mySystem) # bot to see stories
+
+    elif selected == 3:
+        
+        botDraw.functionDraw(mySystem) # bot to see stories
 
     else:
         
