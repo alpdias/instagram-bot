@@ -59,6 +59,8 @@ def functionDraw(mySystem):
     print('')
     
     imgPage = str(input('URL Image: ')) # photo path on instagram
+    amount = int(input('Number of Comments: ')) # number of comments
+    comment = str(input('Comment: ')) # comment
     
     print('')
     print('Loading...')
@@ -108,33 +110,51 @@ def functionDraw(mySystem):
     def findImg(imgPage): # function img search page
 
         driver.get(f'{imgPage}') # instagram img page url
-        
-        
-    # running function for login
-    try:
-        
-        botlogin(username, password)
-        
-    except KeyboardInterrupt:
-        
-        print('\033[0;33mProgram terminated by the user!\033[m')
-        
-    except:
-        
-        print('\033[0;31mUNEXPECTED ERROR ON LOGIN\033[m, please try again and verify your connection!')
 
-    # executing function search img
-    try:
         
-        findImg(imgPage)
+    def typephrase(comment, field): # function to type letter by letter
+
+        for letter in comment: # commentary and lyrics
+            
+            field.send_keys(letter) # type the letter in the field
+            sleep(0.09) # input time of each letter
+
+
+    def commentDraw(amount=1, comment=''): # function to like the photos
         
-    except KeyboardInterrupt:
+        driver.find_element_by_class_name('fr66n').click() # click the like button
+
+        item = 1
+        while item <= amount: # loop with how many photos to like
+            
+            #try:
+                
+            sleep(delay)
+            driver.find_element_by_class_name('Ypffh').click() # click the field to insert comment
+            field = driver.find_element_by_class_name('Ypffh')
+            field.clear()
+            typephrase(comment, field) # insert comment typing each letter
+            sleep(delay)
+
+            # the 'publish' button name changes according to your instagram language
+            driver.find_element_by_xpath('//button[contains(text(), "Publicar")]').click() # click the post 'comment' button element
+            sleep(random.randint(15, 30)) # break time between likes and comment due to instagram policy against bots
+            item = item + 1
+
+            #except:
+                
+            sleep(60) # if connection errors occur
+
+        print(f'Number of commented: \033[0;33m{item - 1}\033[m')
+
         
-        print('\033[0;33mProgram terminated by the user!\033[m')
+    botlogin(username, password)
         
-    except:
-        
-        print('\033[0;31mUNEXPECTED ERROR ON IMG PAGE\033[m, please try again and verify your connection!')
+
+    findImg(imgPage)
+
+    commentDraw(amount, comment)
+
 
     print('')
     print('Finish!')

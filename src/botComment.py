@@ -120,7 +120,7 @@ def functionComment(mySystem):
             sleep(0.09) # input time of each letter
 
 
-    def likecomment(likes=1, comment=''): # function to like the photos
+    def likecomment(likes=1, comment=''): # function to like and comment the photos
 
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
         
