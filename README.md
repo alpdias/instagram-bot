@@ -2,7 +2,7 @@
 
 Python bot to view stories, like and comment on photos on Instagram, using webdrivers and scranping.
 
-# Added a new function to send several comments in pictures of the draw !!
+❗❗ Added a new function to send several comments in pictures of the draw ❗❗
 
 * Script to like: <strong>100%</strong> - Updated (2020/11/12)</br>
 * Script to like and comment: <strong>100%</strong> - Updated (2020/11/12)</br>
@@ -55,7 +55,7 @@ en-US </br>
 
 Python bot para ver stories, curtir e comentar fotos no Instagram, usando webdrivers e scranping.
 
-# Adicionado uma nova função para enviar diversos comentarios em fotos de sorteio!!
+❗❗ Adicionado uma nova função para enviar diversos comentarios em fotos de sorteio ❗❗
 
 * Script para curtir: <strong>100%</strong> - Atualizado (12/11/2020)</br>
 * Script para curtir e comentar: <strong>100%</strong> - Atualizado (12/11/2020)</br>
