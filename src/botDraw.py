@@ -72,14 +72,8 @@ def functionDraw(mySystem):
         driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
         
     except:
-        
-        try:
-            
-            driver = webdriver.Firefox(executable_path=f'{geckoFile}')
-            
-        except:
-            
-            print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
+    
+        print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
 
 
     def botlogin (user, pwd): # function to access the login page and log in
@@ -147,14 +141,43 @@ def functionDraw(mySystem):
 
         print(f'Number of commented: \033[0;33m{item - 1}\033[m')
 
+    # running function for login
+    try:
         
-    botlogin(username, password)
+        botlogin(username, password)
         
+    except KeyboardInterrupt:
+        
+        print('\033[0;33mProgram terminated by the user!\033[m')
+        
+    except:
+        
+        print('\033[0;31mUNEXPECTED ERROR ON LOGIN\033[m, please try again and verify your connection!')
 
-    findImg(imgPage)
-
-    commentDraw(amount, comment)
-
+     # running function to find IMG
+    try:
+        
+        findImg(imgPage)
+        
+    except KeyboardInterrupt:
+        
+        print('\033[0;33mProgram terminated by the user!\033[m')
+        
+    except:
+        
+        print('\033[0;31mUNEXPECTED ERROR ON FIND IMG\033[m, please try again and verify your connection!')
+    # running function to draw comments
+    try:
+        
+        commentDraw(amount, comment)
+        
+    except KeyboardInterrupt:
+        
+        print('\033[0;33mProgram terminated by the user!\033[m')
+        
+    except:
+        
+        print('\033[0;31mUNEXPECTED ERROR ON DRAW COMMENTS\033[m, please try again and verify your connection!')
 
     print('')
     print('Finish!')

@@ -63,14 +63,8 @@ def functionStories(mySystem):
         driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
         
     except:
-        
-        try:
             
-            driver = webdriver.Firefox(executable_path=f'{geckoFile}')
-            
-        except:
-            
-            print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
+        print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
 
 
     # function to access the login page and log in

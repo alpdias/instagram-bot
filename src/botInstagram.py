@@ -20,7 +20,7 @@ while True:
     
     art.artName(2)
 
-    menu = ['Like', 'Comment and Like', 'View Stories', 'Comment for Draw']
+    menu = ['Like', 'Comment and Like', 'View Stories', 'Draw for Comment']
 
     for indice, lista in enumerate(menu): # loop to generate an index in the list of options
         
@@ -47,7 +47,7 @@ while True:
 
     elif selected == 3:
         
-        botDraw.functionDraw(mySystem) # bot to see stories
+        botDraw.functionDraw(mySystem) # bot to draw comments
 
     else:
         
