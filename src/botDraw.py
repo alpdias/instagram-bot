@@ -15,16 +15,20 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 def functionDraw(mySystem):
+    
+    """
+    ->\
+    \n:param mySystem: 
+    \n:return:
+    """
 
     # check the system
     if mySystem == 'Linux': 
-        
         mySystem = 'clear'
         way = Path('geckodriver/linux/geckodriver-v0.26.0-linux64') # path to the file
         geckoFile = way / 'geckodriver' # way to geckodriver
 
     else:
-        
         mySystem = 'cls'
         way = Path('geckodriver/windows') # path to the file
         geckoFile = way / 'geckodriver.exe' # way to geckodriver
@@ -40,7 +44,7 @@ def functionDraw(mySystem):
     delay = int(input('Delay (just number): ')) # loading delay time
 
     # input login for bot 
-    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem)
     art.artName(0)
     
     print('')
@@ -51,7 +55,7 @@ def functionDraw(mySystem):
     password = str(input('Password: ')) # your password
 
     # input info for bot 
-    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem) 
     art.artName(0)
     
     print('')
@@ -68,15 +72,20 @@ def functionDraw(mySystem):
 
     # load browser drive in to var and open
     try:
-        
         driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
         
     except:
-    
         print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
 
 
     def botlogin (user, pwd): # function to access the login page and log in
+        
+        """
+        ->\
+        \n:param user:
+        \n:param pwd:
+        \n:return:
+        """
 
         username = user # your user
         password = pwd # your password
@@ -102,11 +111,24 @@ def functionDraw(mySystem):
 
 
     def findImg(imgPage): # function img search page
+        
+        """
+        ->\
+        \n:param imgPage:
+        \n:return:
+        """
 
         driver.get(f'{imgPage}') # instagram img page url
 
         
     def typephrase(comment, field): # function to type letter by letter
+        
+        """
+        ->\
+        \n:param comment:
+        \n:param field:
+        \n:return:
+        """
 
         for letter in comment: # commentary and lyrics
             
@@ -116,67 +138,66 @@ def functionDraw(mySystem):
 
     def commentDraw(amount=1, comment=''): # function to like the photos
         
+        """
+        ->\
+        \n:param amount:
+        \n:param comment:
+        \n:return:
+        """ 
+        
         driver.find_element_by_class_name('fr66n').click() # click the like button
 
         item = 1
         while item <= amount: # loop with how many photos to like
             
-            #try:
-                
-            sleep(delay)
-            driver.find_element_by_class_name('Ypffh').click() # click the field to insert comment
-            field = driver.find_element_by_class_name('Ypffh')
-            field.clear()
-            typephrase(comment, field) # insert comment typing each letter
-            sleep(delay)
+            try:
+                sleep(delay)
+                driver.find_element_by_class_name('Ypffh').click() # click the field to insert comment
+                field = driver.find_element_by_class_name('Ypffh')
+                field.clear()
+                typephrase(comment, field) # insert comment typing each letter
+                sleep(delay)
 
-            # the 'publish' button name changes according to your instagram language
-            driver.find_element_by_xpath('//button[contains(text(), "Publicar")]').click() # click the post 'comment' button element
-            sleep(random.randint(15, 30)) # break time between likes and comment due to instagram policy against bots
-            item = item + 1
-
-            #except:
+                # the 'publish' button name changes according to your instagram language
                 
-            sleep(60) # if connection errors occur
+                driver.find_element_by_xpath('//button[contains(text(), "Publicar")]').click() # click the post 'comment' button element
+                sleep(random.randint(15, 30)) # break time between likes and comment due to instagram policy against bots
+                item = item + 1
+
+            except: 
+                sleep(60) # if connection errors occur
 
         print(f'Number of commented: \033[0;33m{item - 1}\033[m')
 
+        
     # running function for login
     try:
-        
         botlogin(username, password)
         
     except KeyboardInterrupt:
-        
         print('\033[0;33mProgram terminated by the user!\033[m')
         
     except:
-        
         print('\033[0;31mUNEXPECTED ERROR ON LOGIN\033[m, please try again and verify your connection!')
 
      # running function to find IMG
     try:
-        
         findImg(imgPage)
         
     except KeyboardInterrupt:
-        
         print('\033[0;33mProgram terminated by the user!\033[m')
         
     except:
-        
         print('\033[0;31mUNEXPECTED ERROR ON FIND IMG\033[m, please try again and verify your connection!')
+        
     # running function to draw comments
     try:
-        
         commentDraw(amount, comment)
         
     except KeyboardInterrupt:
-        
         print('\033[0;33mProgram terminated by the user!\033[m')
         
     except:
-        
         print('\033[0;31mUNEXPECTED ERROR ON DRAW COMMENTS\033[m, please try again and verify your connection!')
 
     print('')
@@ -185,3 +206,5 @@ def functionDraw(mySystem):
     
     press = input('\033[0;34mpress "enter" to continue\033[m ')
     os.system(mySystem) 
+    
+    
