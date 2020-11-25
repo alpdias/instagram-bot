@@ -15,16 +15,20 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 def functionLike(mySystem):
+    
+    """
+    ->\
+    \n:param mySystem: 
+    \n:return:
+    """
 
     # check the system
     if mySystem == 'Linux': 
-        
         mySystem = 'clear'
         way = Path('geckodriver/linux/geckodriver-v0.26.0-linux64') # path to the file
         geckoFile = way / 'geckodriver' # way to geckodriver
 
     else:
-        
         mySystem = 'cls'
         way = Path('geckodriver/windows') # path to the file
         geckoFile = way / 'geckodriver.exe' # way to geckodriver
@@ -40,7 +44,7 @@ def functionLike(mySystem):
     delay = int(input('Delay (just number): ')) # loading delay time
 
     # input login for bot 
-    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem)
     art.artName(0)
     
     print('')
@@ -51,7 +55,7 @@ def functionLike(mySystem):
     password = str(input('Password: ')) # your password
 
     # input info for bot 
-    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem) 
     art.artName(0)
     
     print('')
@@ -67,15 +71,20 @@ def functionLike(mySystem):
 
     # load browser drive in to var and open
     try:
-        
         driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
         
     except:
-            
         print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
 
 
     def botlogin (user, pwd): # function to access the login page and log in
+        
+        """
+        ->\
+        \n:param user:
+        \n:param pwd:
+        \n:return:
+        """
 
         username = user # your user
         password = pwd # your password
@@ -101,11 +110,23 @@ def functionLike(mySystem):
 
     
     def findhashtag(hashtag): # function hashtag search page
+        
+        """
+        ->\
+        \n:param hashtag:
+        \n:return:
+        """
 
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
 
     
     def like(likes=1): # function to like the photos
+        
+        """
+        ->\
+        \n:param likes:
+        \n:return:
+        """ 
 
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
 
@@ -113,7 +134,6 @@ def functionLike(mySystem):
         while item <= likes: # loop with how many photos to like
 
             try:
-                
                 sleep(delay)
                 driver.find_element_by_class_name('fr66n').click() # click the like button
                 sleep(random.randint(40, 70)) # break time between likes and comment due to instagram policy against bots
@@ -121,7 +141,6 @@ def functionLike(mySystem):
                 item = item + 1
                 
             except:
-                
                 sleep(60) # if connection errors occur
 
         print(f'Number of photos liked: \033[0;33m{item - 1}\033[m')
@@ -129,41 +148,32 @@ def functionLike(mySystem):
         
     # running function for login
     try:
-        
         botlogin(username, password)
         
     except KeyboardInterrupt:
-        
         print('\033[0;33mProgram terminated by the user!\033[m')
         
     except:
-        
         print('\033[0;31mUNEXPECTED ERROR ON LOGIN\033[m, please try again and verify your connection!')
 
     # executing function search hastag
     try:
-        
         findhashtag(hashtag)
         
     except KeyboardInterrupt:
-        
         print('\033[0;33mProgram terminated by the user!\033[m')
         
     except:
-        
         print('\033[0;31mUNEXPECTED ERROR ON HASHTAG PAGE\033[m, please try again and verify your connection!')
 
     # executing function to enjoy
     try:
-        
         like(likes)
         
     except KeyboardInterrupt:
-        
         print('\033[0;33mProgram terminated by the user!\033[m')
         
     except:
-        
         print('\033[0;31mUNEXPECTED ERROR ON LIKE\033[m, please try again and verify your connection!')
 
     print('')
