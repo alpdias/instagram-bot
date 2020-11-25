@@ -55,7 +55,7 @@ def functionComment(mySystem):
     password = str(input('Password: ')) # your password
 
     # input info for bot
-    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem) 
     art.artName(0)
     
     print('')
@@ -148,6 +148,7 @@ def functionComment(mySystem):
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
         
         item = 1
+        
         while item <= likes: # loop with how many photos to like
             
             try:
