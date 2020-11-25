@@ -134,6 +134,7 @@ def functionLike(mySystem):
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
 
         item = 1
+        
         while item <= likes: # loop with how many photos to like
 
             try:
@@ -289,6 +290,7 @@ def functionComment(mySystem):
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
         
         item = 1
+        
         while item <= likes: # loop with how many photos to like
             
             try:
