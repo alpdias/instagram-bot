@@ -136,7 +136,7 @@ def functionDraw(mySystem):
             sleep(0.09) # input time of each letter
 
 
-    def commentDraw(amount=1, comment=''): # function to like the photos
+    def commentDraw(amount=1, comment=''): # function to comment on the draw photo
         
         """
         ->\
@@ -148,7 +148,8 @@ def functionDraw(mySystem):
         driver.find_element_by_class_name('fr66n').click() # click the like button
 
         item = 1
-        while item <= amount: # loop with how many photos to like
+        
+        while item <= amount: 
             
             try:
                 sleep(delay)
