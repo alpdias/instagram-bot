@@ -6,8 +6,8 @@ Python bot to view stories, like and comment on photos on Instagram, using webdr
 
 * Script to like: <strong>100%</strong> - Updated (2020/11/12)</br>
 * Script to like and comment: <strong>100%</strong> - Updated (2020/11/12)</br>
-* Script to see stories: <strong>100%</strong> - Updated (2020/11/12)
-* Script to draw: <strong>100%</strong> - Updated (2020/11/12)(in tests)
+* Script to see stories: <strong>100%</strong> - Updated (2020/11/12)</br>
+* Script to draw: <strong>100%</strong> - Updated (2020/11/12)
 
 Python 3.8.0 </br>
 Microsoft VSCode 1.41.1 </br>
@@ -60,8 +60,8 @@ Python bot para ver stories, curtir e comentar fotos no Instagram, usando webdri
 
 * Script para curtir: <strong>100%</strong> - Atualizado (12/11/2020)</br>
 * Script para curtir e comentar: <strong>100%</strong> - Atualizado (12/11/2020)</br>
-* Script para ver stories: <strong>100%</strong> - Atualizado (12/11/2020)
-* Script para sorteio: <strong>100%</strong> - Atualizado (12/11/2020)(em testes)
+* Script para ver stories: <strong>100%</strong> - Atualizado (12/11/2020)</br>
+* Script para sorteio: <strong>100%</strong> - Atualizado (12/11/2020)
 
 Python 3.8.0 </br>
 Microsoft VSCode 1.41.1 </br>
