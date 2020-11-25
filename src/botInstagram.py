@@ -34,21 +34,16 @@ while True:
     print('')
 
     if selected == 0:
-        
         botLike.functionLike(mySystem) # bot to like
 
     elif selected == 1:
-        
         botComment.functionComment(mySystem) # bot to like and comment
 
     elif selected == 2:
-        
         botStories.functionStories(mySystem) # bot to see stories
 
     elif selected == 3:
-        
         botDraw.functionDraw(mySystem) # bot to draw comments
 
     else:
-        
       print('Option invalid, please try again!')
