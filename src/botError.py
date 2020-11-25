@@ -16,6 +16,11 @@ from selenium.webdriver.common.keys import Keys
 
 def artName(timeSleep=0): # function to print text in ascii art
     
+    """
+    ->
+    :return:
+    """
+    
     f = Figlet(font='slant')
     instagramName = f.renderText('Instagram bot')
     print(instagramName)
@@ -23,19 +28,22 @@ def artName(timeSleep=0): # function to print text in ascii art
 
 
 def functionLike(mySystem):
+    
+    """
+    ->
+    :return:
+    """
 
     # check the system
     if mySystem == 'Linux': 
-        
         mySystem = 'clear'
         way = Path('geckodriver/linux/geckodriver-v0.26.0-linux64') # path to the file
         geckoFile = way / 'geckodriver' # way to geckodriver
 
     else:
-        
         mySystem = 'cls'
-        way = Path('geckodriver/windows') # path to the file
-        geckoFile = way / 'geckodriver.exe' # way to geckodriver
+        way = Path('geckodriver/windows') 
+        geckoFile = way / 'geckodriver.exe'
 
     # input for config bot
     os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
@@ -48,7 +56,7 @@ def functionLike(mySystem):
     delay = int(input('Delay (just number): ')) # loading delay time
 
     # input login for bot 
-    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem) 
     artName(0)
     
     print('')
@@ -59,7 +67,7 @@ def functionLike(mySystem):
     password = str(input('Password: ')) # your password
 
     # input info for bot 
-    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem)
     artName(0)
     
     print('')
@@ -77,6 +85,11 @@ def functionLike(mySystem):
     driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
   
     def botlogin (user, pwd): # function to access the login page and log in
+        
+        """
+        ->
+        :return:
+        """
 
         username = user # your user
         password = pwd # your password
@@ -102,11 +115,21 @@ def functionLike(mySystem):
 
    
     def findhashtag(hashtag):  # function hashtag search page
+        
+        """
+        ->
+        :return:
+        """
 
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
 
 
     def like(likes=1): # function to like the photos
+        
+        """
+        ->
+        :return:
+        """
 
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
 
@@ -114,7 +137,6 @@ def functionLike(mySystem):
         while item <= likes: # loop with how many photos to like
 
             try:
-                
                 sleep(delay)
                 driver.find_element_by_class_name('fr66n').click() # click the like button
                 sleep(random.randint(40, 70)) # break time between likes and comment due to instagram policy against bots
@@ -122,7 +144,6 @@ def functionLike(mySystem):
                 item = item + 1
                 
             except:
-                
                 sleep(60) # if connection errors occur
 
         print(f'Number of photos liked: \033[0;33m{item - 1}\033[m')
@@ -146,19 +167,22 @@ def functionLike(mySystem):
     
     
 def functionComment(mySystem):
+    
+    """
+    ->
+    :return:
+    """
 
     # check the system
     if mySystem == 'Linux': 
-        
         mySystem = 'clear'
         way = Path('geckodriver/linux/geckodriver-v0.26.0-linux64') # path to the file
         geckoFile = way / 'geckodriver' # way to geckodriver
 
     else:
-        
         mySystem = 'cls'
-        way = Path('geckodriver/windows') # path to the file
-        geckoFile = way / 'geckodriver.exe' # way to geckodriver
+        way = Path('geckodriver/windows') 
+        geckoFile = way / 'geckodriver.exe' 
 
     # input for config bot
     os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
@@ -171,7 +195,7 @@ def functionComment(mySystem):
     delay = int(input('Delay (just number): ')) # loading delay time
 
     # input login for bot 
-    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem) 
     artName(0)
     
     print('')
@@ -182,7 +206,7 @@ def functionComment(mySystem):
     password = str(input('Password: ')) # your password
 
     # input info for bot
-    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem)
     artName(0)
     
     print('')
@@ -202,6 +226,11 @@ def functionComment(mySystem):
 
     
     def botlogin (user, pwd): # function to access the login page and log in
+        
+        """
+        ->
+        :return:
+        """
         
         username = user # your user
         password = pwd # your password
@@ -227,11 +256,21 @@ def functionComment(mySystem):
 
     
     def findhashtag(hashtag): # function hashtag search page
+        
+        """
+        ->
+        :return:
+        """
 
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
 
     
     def typephrase(comment, field): # function to type letter by letter
+        
+        """
+        ->
+        :return:
+        """
 
         for letter in comment: # commentary and lyrics
             
@@ -241,6 +280,11 @@ def functionComment(mySystem):
 
     # function to like and comment the photos
     def likecomment(likes=1, comment=''):
+        
+        """
+        ->
+        :return:
+        """
 
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
         
@@ -248,7 +292,6 @@ def functionComment(mySystem):
         while item <= likes: # loop with how many photos to like
             
             try:
-                
                 sleep(delay)
                 driver.find_element_by_class_name('fr66n').click() # click the like button
                 driver.find_element_by_class_name('Ypffh').click() # click the field to insert comment
@@ -264,7 +307,6 @@ def functionComment(mySystem):
                 item = item + 1
 
             except:
-                
                 sleep(60) # if connection errors occur
 
         print(f'Number of photos liked and commented: \033[0;33m{item - 1}\033[m')
@@ -287,19 +329,22 @@ def functionComment(mySystem):
 
 
 def functionStories(mySystem):
+    
+    """
+    ->
+    :return:
+    """
 
     # check the system
     if mySystem == 'Linux': 
-        
         mySystem = 'clear'
         way = Path('geckodriver/linux/geckodriver-v0.26.0-linux64') # path to the file
         geckoFile = way / 'geckodriver' # way to geckodriver
 
     else:
-        
         mySystem = 'cls'
-        way = Path('geckodriver/windows') # path to the file
-        geckoFile = way / 'geckodriver.exe' # way to geckodriver
+        way = Path('geckodriver/windows')
+        geckoFile = way / 'geckodriver.exe'
 
     # input for config bot
     os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
@@ -312,7 +357,7 @@ def functionStories(mySystem):
     delay = int(input('Delay (just number): ')) # loading delay time
 
     # input info for bot 
-    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem) 
     artName(0)
     
     print('')
@@ -322,7 +367,7 @@ def functionStories(mySystem):
     username = str(input('User: ')) # your user
     password = str(input('Password: ')) # your password
 
-    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem) 
     artName(0)
     
     print('')
@@ -333,6 +378,11 @@ def functionStories(mySystem):
     driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
     
     def botlogin (user, pwd): # function to access the login page and log in
+        
+        """
+        ->
+        :return:
+        """
 
         username = user # your user
         password = pwd # your password
@@ -358,9 +408,13 @@ def functionStories(mySystem):
 
 
     def stories(): # function to view the stories
+        
+        """
+        ->
+        :return:
+        """
 
         try:
-            
             driver.find_element_by_xpath('//button[contains(text(), "Agora não")]').click() # press the notification button that appears most of the time, denying the option
             sleep(delay)
             
@@ -368,7 +422,6 @@ def functionStories(mySystem):
             pass
         
         try:
-            
             driver.find_element_by_xpath('//button[contains(text(), "Agora não")]').click() # press the notification button that appears most of the time, denying the option
             sleep(delay)
             
@@ -385,13 +438,7 @@ def functionStories(mySystem):
             sleep(delay)
 
             try:
-                
                 driver.find_element_by_class_name('coreSpriteRightChevron').click() # next storie button
-                
-            except KeyboardInterrupt:
-                
-                print('\033[0;33mProgram terminated by the user!\033[m')
-                loadstories = 0
                 
             except:
                 
@@ -414,19 +461,22 @@ def functionStories(mySystem):
 
 
 def functionDraw(mySystem):
+    
+    """
+    ->
+    :return:
+    """
 
     # check the system
     if mySystem == 'Linux': 
-        
         mySystem = 'clear'
         way = Path('geckodriver/linux/geckodriver-v0.26.0-linux64') # path to the file
         geckoFile = way / 'geckodriver' # way to geckodriver
 
     else:
-        
         mySystem = 'cls'
-        way = Path('geckodriver/windows') # path to the file
-        geckoFile = way / 'geckodriver.exe' # way to geckodriver
+        way = Path('geckodriver/windows') 
+        geckoFile = way / 'geckodriver.exe'
 
     # input for config bot
     os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
@@ -439,7 +489,7 @@ def functionDraw(mySystem):
     delay = int(input('Delay (just number): ')) # loading delay time
 
     # input login for bot 
-    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem)
     artName(0)
     
     print('')
@@ -450,7 +500,7 @@ def functionDraw(mySystem):
     password = str(input('Password: ')) # your password
 
     # input info for bot 
-    os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
+    os.system(mySystem)
     artName(0)
     
     print('')
@@ -469,6 +519,11 @@ def functionDraw(mySystem):
     driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
 
     def botlogin (user, pwd): # function to access the login page and log in
+        
+        """
+        ->
+        :return:
+        """
 
         username = user # your user
         password = pwd # your password
@@ -494,11 +549,21 @@ def functionDraw(mySystem):
 
 
     def findImg(imgPage): # function img search page
+        
+        """
+        ->
+        :return:
+        """
 
         driver.get(f'{imgPage}') # instagram img page url
 
         
     def typephrase(comment, field): # function to type letter by letter
+        
+        """
+        ->
+        :return:
+        """
 
         for letter in comment: # commentary and lyrics
             
@@ -506,30 +571,35 @@ def functionDraw(mySystem):
             sleep(0.09) # input time of each letter
 
 
-    def commentDraw(amount=1, comment=''): # function to like the photos
+    def commentDraw(amount=1, comment=''): # function to comment on the draw photo
+        
+        """
+        ->
+        :return:
+        """
         
         driver.find_element_by_class_name('fr66n').click() # click the like button
 
         item = 1
-        while item <= amount: # loop with how many photos to like
+        
+        while item <= amount: # 
             
-            #try:
-                
-            sleep(delay)
-            driver.find_element_by_class_name('Ypffh').click() # click the field to insert comment
-            field = driver.find_element_by_class_name('Ypffh')
-            field.clear()
-            typephrase(comment, field) # insert comment typing each letter
-            sleep(delay)
+            try:
+                sleep(delay)
+                driver.find_element_by_class_name('Ypffh').click() # click the field to insert comment
+                field = driver.find_element_by_class_name('Ypffh')
+                field.clear()
+                typephrase(comment, field) # insert comment typing each letter
+                sleep(delay)
 
-            # the 'publish' button name changes according to your instagram language
-            driver.find_element_by_xpath('//button[contains(text(), "Publicar")]').click() # click the post 'comment' button element
-            sleep(random.randint(15, 30)) # break time between likes and comment due to instagram policy against bots
-            item = item + 1
+                # the 'publish' button name changes according to your instagram language
 
-            #except:
-                
-            sleep(60) # if connection errors occur
+                driver.find_element_by_xpath('//button[contains(text(), "Publicar")]').click() # click the post 'comment' button element
+                sleep(random.randint(15, 30)) # break time between likes and comment due to instagram policy against bots
+                item = item + 1
+
+            except: 
+                sleep(60) # if connection errors occur
 
         print(f'Number of commented: \033[0;33m{item - 1}\033[m')
 
@@ -571,21 +641,16 @@ while True:
     print('')
 
     if selected == 0:
-        
         functionLike(mySystem) # bot to like
 
     elif selected == 1:
-        
         functionComment(mySystem) # bot to like and comment
 
     elif selected == 2:
-        
         functionStories(mySystem) # bot to see stories
     
     elif selected == 3:
-    
         functionDraw(mySystem) # bot to draw comments
 
-    else:
-        
+    else:  
       print('Option invalid, please try again!')
