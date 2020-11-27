@@ -18,8 +18,8 @@ def functionDraw(mySystem):
     
     """
     ->\
-    \n:param mySystem: 
-    \n:return:
+    \n:param mySystem:\
+    \n:return:\
     """
 
     # check the system
@@ -82,9 +82,9 @@ def functionDraw(mySystem):
         
         """
         ->\
-        \n:param user:
-        \n:param pwd:
-        \n:return:
+        \n:param user:\
+        \n:param pwd:\
+        \n:return:\
         """
 
         username = user # your user
@@ -114,8 +114,8 @@ def functionDraw(mySystem):
         
         """
         ->\
-        \n:param imgPage:
-        \n:return:
+        \n:param imgPage:\
+        \n:return:\
         """
 
         driver.get(f'{imgPage}') # instagram img page url
@@ -125,9 +125,9 @@ def functionDraw(mySystem):
         
         """
         ->\
-        \n:param comment:
-        \n:param field:
-        \n:return:
+        \n:param comment:\
+        \n:param field:\
+        \n:return:\
         """
 
         for letter in comment: # commentary and lyrics
@@ -140,9 +140,9 @@ def functionDraw(mySystem):
         
         """
         ->\
-        \n:param amount:
-        \n:param comment:
-        \n:return:
+        \n:param amount:\
+        \n:param comment:\
+        \n:return:\
         """ 
         
         driver.find_element_by_class_name('fr66n').click() # click the like button
