@@ -18,8 +18,8 @@ def functionStories(mySystem):
     
     """
     ->\
-    \n:param mySystem: 
-    \n:return:
+    \n:param mySystem:\
+    \n:return:\
     """
 
     # check the system
@@ -73,9 +73,9 @@ def functionStories(mySystem):
         
         """
         ->\
-        \n:param user:
-        \n:param pwd:
-        \n:return:
+        \n:param user:\
+        \n:param pwd:\
+        \n:return:\
         """
 
         username = user # your user
@@ -105,7 +105,7 @@ def functionStories(mySystem):
         
         """
         ->\
-        \n:return:
+        \n:return:\
         """
 
         try:
