@@ -18,8 +18,8 @@ def functionLike(mySystem):
     
     """
     ->\
-    \n:param mySystem: 
-    \n:return:
+    \n:param mySystem:\
+    \n:return:\
     """
 
     # check the system
@@ -81,9 +81,9 @@ def functionLike(mySystem):
         
         """
         ->\
-        \n:param user:
-        \n:param pwd:
-        \n:return:
+        \n:param user:\
+        \n:param pwd:\
+        \n:return:\
         """
 
         username = user # your user
@@ -113,8 +113,8 @@ def functionLike(mySystem):
         
         """
         ->\
-        \n:param hashtag:
-        \n:return:
+        \n:param hashtag:\
+        \n:return:\
         """
 
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
@@ -124,8 +124,8 @@ def functionLike(mySystem):
         
         """
         ->\
-        \n:param likes:
-        \n:return:
+        \n:param likes:\
+        \n:return:\
         """ 
 
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
