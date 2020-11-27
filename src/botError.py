@@ -17,8 +17,8 @@ from selenium.webdriver.common.keys import Keys
 def artName(timeSleep=0): # function to print text in ascii art
     
     """
-    ->
-    :return:
+    ->\
+    \n:return:\
     """
     
     f = Figlet(font='slant')
@@ -30,8 +30,8 @@ def artName(timeSleep=0): # function to print text in ascii art
 def functionLike(mySystem):
     
     """
-    ->
-    :return:
+    ->\
+    \n:return:\
     """
 
     # check the system
@@ -87,8 +87,8 @@ def functionLike(mySystem):
     def botlogin (user, pwd): # function to access the login page and log in
         
         """
-        ->
-        :return:
+        ->\
+        \n:return:\
         """
 
         username = user # your user
@@ -117,8 +117,8 @@ def functionLike(mySystem):
     def findhashtag(hashtag):  # function hashtag search page
         
         """
-        ->
-        :return:
+        ->\
+        \n:return:\
         """
 
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
@@ -127,8 +127,8 @@ def functionLike(mySystem):
     def like(likes=1): # function to like the photos
         
         """
-        ->
-        :return:
+        ->\
+        \n:return:\
         """
 
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
@@ -170,8 +170,8 @@ def functionLike(mySystem):
 def functionComment(mySystem):
     
     """
-    ->
-    :return:
+    ->\
+    \n:return:\
     """
 
     # check the system
@@ -229,8 +229,8 @@ def functionComment(mySystem):
     def botlogin (user, pwd): # function to access the login page and log in
         
         """
-        ->
-        :return:
+        ->\
+        \n:return:\
         """
         
         username = user # your user
@@ -259,8 +259,8 @@ def functionComment(mySystem):
     def findhashtag(hashtag): # function hashtag search page
         
         """
-        ->
-        :return:
+        ->\
+        \n:return:\
         """
 
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
@@ -269,8 +269,8 @@ def functionComment(mySystem):
     def typephrase(comment, field): # function to type letter by letter
         
         """
-        ->
-        :return:
+        ->\
+        \n:return:\
         """
 
         for letter in comment: # commentary and lyrics
@@ -283,8 +283,8 @@ def functionComment(mySystem):
     def likecomment(likes=1, comment=''):
         
         """
-        ->
-        :return:
+        ->\
+        \n:return:\
         """
 
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
@@ -333,8 +333,8 @@ def functionComment(mySystem):
 def functionStories(mySystem):
     
     """
-    ->
-    :return:
+    ->\
+    \n:return:\
     """
 
     # check the system
@@ -382,8 +382,8 @@ def functionStories(mySystem):
     def botlogin (user, pwd): # function to access the login page and log in
         
         """
-        ->
-        :return:
+        ->\
+        \n:return:\
         """
 
         username = user # your user
@@ -412,8 +412,8 @@ def functionStories(mySystem):
     def stories(): # function to view the stories
         
         """
-        ->
-        :return:
+        ->\
+        \n:return:\
         """
 
         try:
@@ -465,8 +465,8 @@ def functionStories(mySystem):
 def functionDraw(mySystem):
     
     """
-    ->
-    :return:
+    ->\
+    \n:return:\
     """
 
     # check the system
@@ -523,8 +523,8 @@ def functionDraw(mySystem):
     def botlogin (user, pwd): # function to access the login page and log in
         
         """
-        ->
-        :return:
+        ->\
+        \n:return:\
         """
 
         username = user # your user
@@ -553,8 +553,8 @@ def functionDraw(mySystem):
     def findImg(imgPage): # function img search page
         
         """
-        ->
-        :return:
+        ->\
+        \n:return:\
         """
 
         driver.get(f'{imgPage}') # instagram img page url
@@ -563,8 +563,8 @@ def functionDraw(mySystem):
     def typephrase(comment, field): # function to type letter by letter
         
         """
-        ->
-        :return:
+        ->\
+        \n:return:\
         """
 
         for letter in comment: # commentary and lyrics
@@ -576,8 +576,8 @@ def functionDraw(mySystem):
     def commentDraw(amount=1, comment=''): # function to comment on the draw photo
         
         """
-        ->
-        :return:
+        ->\
+        \n:return:\
         """
         
         driver.find_element_by_class_name('fr66n').click() # click the like button
