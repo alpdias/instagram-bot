@@ -82,9 +82,9 @@ def functionComment(mySystem):
         
         """
         ->\
-        \n:param user:
-        \n:param pwd:
-        \n:return:
+        \n:param user:\
+        \n:param pwd:\
+        \n:return:\
         """
         
         username = user # your user
@@ -114,8 +114,8 @@ def functionComment(mySystem):
         
         """
         ->\
-        \n:param hashtag:
-        \n:return:
+        \n:param hashtag:\
+        \n:return:\
         """
 
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
@@ -125,9 +125,9 @@ def functionComment(mySystem):
         
         """
         ->\
-        \n:param comment:
-        \n:param field:
-        \n:return:
+        \n:param comment:\
+        \n:param field:\
+        \n:return:\
         """
 
         for letter in comment: # commentary and lyrics
@@ -140,9 +140,9 @@ def functionComment(mySystem):
         
         """
         ->\
-        \n:param likes:
-        \n:param comment:
-        \n:return:
+        \n:param likes:\
+        \n:param comment:\
+        \n:return:\
         """ 
 
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
