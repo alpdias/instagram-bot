@@ -18,8 +18,8 @@ def functionComment(mySystem):
     
     """
     ->\
-    \n:param mySystem: 
-    \n:return:
+    \n:param mySystem:\
+    \n:return:\
     """
 
     # check the system
