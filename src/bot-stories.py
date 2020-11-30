@@ -32,6 +32,7 @@ def functionStories(mySystem):
         mySystem = 'cls'
         way = Path('geckodriver/windows') 
         geckoFile = way / 'geckodriver.exe'
+        
     # input for config bot
     os.system(mySystem) # for linux user 'clear' and for windows use 'cls'
     art.artName(0)
