@@ -18,7 +18,7 @@ def functionDraw(mySystem):
     
     """
     ->\
-    \n:param mySystem:\
+    \n:param mySystem: operating system type\
     \n:return:\
     """
 
