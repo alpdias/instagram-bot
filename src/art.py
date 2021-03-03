@@ -9,12 +9,12 @@ Created in 07/2020
 from time import sleep
 from pyfiglet import Figlet
 
-def artName(timeSleep=0): # function to print text in ascii art
+def artName(timeSleep=0):
     
     """
-    ->\
-    \n:param timeSleep:\
-    \n:return:\
+    -> function to print text in ascii art\
+    \n:param timeSleep: art loading time\
+    \n:return: ascii art\
     """
     
     f = Figlet(font='slant')
