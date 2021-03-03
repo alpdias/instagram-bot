@@ -18,6 +18,7 @@ def artName(timeSleep=0): # function to print text in ascii art
     
     """
     ->\
+    \n:param timeSleep:\
     \n:return:\
     """
     
@@ -31,6 +32,7 @@ def functionLike(mySystem):
     
     """
     ->\
+    \n:param mySystem: operating system type\
     \n:return:\
     """
 
@@ -88,6 +90,8 @@ def functionLike(mySystem):
         
         """
         ->\
+        \n:param user:\
+        \n:param pwd:\
         \n:return:\
         """
 
@@ -118,6 +122,7 @@ def functionLike(mySystem):
         
         """
         ->\
+        \n:param hashtag:\
         \n:return:\
         """
 
@@ -128,6 +133,7 @@ def functionLike(mySystem):
         
         """
         ->\
+        \n:param likes:\
         \n:return:\
         """
 
@@ -171,6 +177,7 @@ def functionComment(mySystem):
     
     """
     ->\
+    \n:param mySystem: operating system type\
     \n:return:\
     """
 
@@ -230,6 +237,8 @@ def functionComment(mySystem):
         
         """
         ->\
+        \n:param user:\
+        \n:param pwd:\
         \n:return:\
         """
         
@@ -260,6 +269,7 @@ def functionComment(mySystem):
         
         """
         ->\
+        \n:param hashtag:\
         \n:return:\
         """
 
@@ -270,6 +280,8 @@ def functionComment(mySystem):
         
         """
         ->\
+        \n:param comment:\
+        \n:param field:\
         \n:return:\
         """
 
@@ -284,6 +296,8 @@ def functionComment(mySystem):
         
         """
         ->\
+        \n:param likes:\
+        \n:param comment:\
         \n:return:\
         """
 
@@ -334,6 +348,7 @@ def functionStories(mySystem):
     
     """
     ->\
+    \n:param mySystem: operating system type\
     \n:return:\
     """
 
@@ -383,6 +398,8 @@ def functionStories(mySystem):
         
         """
         ->\
+        \n:param user:\
+        \n:param pwd:\
         \n:return:\
         """
 
@@ -466,6 +483,7 @@ def functionDraw(mySystem):
     
     """
     ->\
+    \n:param mySystem: operating system type\
     \n:return:\
     """
 
@@ -524,6 +542,8 @@ def functionDraw(mySystem):
         
         """
         ->\
+        \n:param user:\
+        \n:param pwd:\
         \n:return:\
         """
 
@@ -554,6 +574,7 @@ def functionDraw(mySystem):
         
         """
         ->\
+        \n:param imgPage:\
         \n:return:\
         """
 
@@ -564,6 +585,8 @@ def functionDraw(mySystem):
         
         """
         ->\
+        \n:param comment:\
+        \n:param field:\
         \n:return:\
         """
 
@@ -577,6 +600,8 @@ def functionDraw(mySystem):
         
         """
         ->\
+        \n:param amount:\
+        \n:param comment:\
         \n:return:\
         """
         
