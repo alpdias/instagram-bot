@@ -18,7 +18,7 @@ def artName(timeSleep=0): # function to print text in ascii art
     
     """
     ->\
-    \n:param timeSleep:\
+    \n:param timeSleep: waiting time for execution\
     \n:return:\
     """
     
