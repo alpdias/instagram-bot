@@ -90,8 +90,8 @@ def functionLike(mySystem):
         
         """
         ->\
-        \n:param user:\
-        \n:param pwd:\
+        \n:param user: user to login\
+        \n:param pwd: login password\
         \n:return:\
         """
 
