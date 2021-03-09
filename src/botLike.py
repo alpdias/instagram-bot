@@ -17,9 +17,9 @@ from selenium.webdriver.common.keys import Keys
 def functionLike(mySystem):
     
     """
-    -> selection of the type of system that is running\
+    -> function to enjoy photos\
     \n:param mySystem: operating system type\
-    \n:return: system type\
+    \n:return: bot to enjoy photos\
     """
 
     # check the system
