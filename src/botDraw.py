@@ -17,9 +17,9 @@ from selenium.webdriver.common.keys import Keys
 def functionDraw(mySystem):
     
     """
-    -> selection of the type of system that is running\
+    -> function to comment several times on photos of draw\
     \n:param mySystem: operating system type\
-    \n:return: system type\
+    \n:return: bot to comment several times on sweepstakes photos\
     """
 
     # check the system
