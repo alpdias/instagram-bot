@@ -17,9 +17,9 @@ from selenium.webdriver.common.keys import Keys
 def functionStories(mySystem):
     
     """
-    ->\
+    -> function to see stories\
     \n:param mySystem: operating system type\
-    \n:return:\
+    \n:return: bot to see stories\
     """
 
     # check the system
