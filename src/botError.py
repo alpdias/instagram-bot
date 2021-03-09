@@ -17,9 +17,9 @@ from selenium.webdriver.common.keys import Keys
 def artName(timeSleep=0): # function to print text in ascii art
     
     """
-    ->\
+    -> function to print text in ascii art\
     \n:param timeSleep: waiting time for execution\
-    \n:return:\
+    \n:return: ascii art\
     """
     
     f = Figlet(font='slant')
@@ -31,9 +31,9 @@ def artName(timeSleep=0): # function to print text in ascii art
 def functionLike(mySystem):
     
     """
-    ->\
+    -> function to enjoy photos\
     \n:param mySystem: operating system type\
-    \n:return:\
+    \n:return: bot to enjoy photos\
     """
 
     # check the system
@@ -176,9 +176,9 @@ def functionLike(mySystem):
 def functionComment(mySystem):
     
     """
-    ->\
+    -> function for commenting photos\
     \n:param mySystem: operating system type\
-    \n:return:\
+    \n:return: bot to comment photos\
     """
 
     # check the system
@@ -347,9 +347,9 @@ def functionComment(mySystem):
 def functionStories(mySystem):
     
     """
-    ->\
+    -> function to see stories\
     \n:param mySystem: operating system type\
-    \n:return:\
+    \n:return: bot to see stories\
     """
 
     # check the system
@@ -482,9 +482,9 @@ def functionStories(mySystem):
 def functionDraw(mySystem):
     
     """
-    ->\
+    -> function to comment several times on photos of draw\
     \n:param mySystem: operating system type\
-    \n:return:\
+    \n:return: bot to comment several times on sweepstakes photos\
     """
 
     # check the system
