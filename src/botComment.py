@@ -17,9 +17,9 @@ from selenium.webdriver.common.keys import Keys
 def functionComment(mySystem):
     
     """
-    -> selection of the type of system that is running\
+    -> function for commenting photos\
     \n:param mySystem: operating system type\
-    \n:return: system type\
+    \n:return: bot to comment photos\
     """
 
     # check the system
