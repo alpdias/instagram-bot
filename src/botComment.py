@@ -17,9 +17,9 @@ from selenium.webdriver.common.keys import Keys
 def functionComment(mySystem):
     
     """
-    ->\
+    -> selection of the type of system that is running\
     \n:param mySystem: operating system type\
-    \n:return:\
+    \n:return: system type\
     """
 
     # check the system
