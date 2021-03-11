@@ -86,10 +86,10 @@ def functionLike(mySystem):
     # load browser drive in to var and open
     driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
   
-    def botlogin (user, pwd): # function to access the login page and log in
+    def botlogin (user, pwd): 
         
         """
-        ->\
+        -> log in to instagram along with credentials\
         \n:param user: user to login\
         \n:param pwd: login password\
         \n:return:\
@@ -233,10 +233,10 @@ def functionComment(mySystem):
     driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
 
     
-    def botlogin (user, pwd): # function to access the login page and log in
+    def botlogin (user, pwd): 
         
         """
-        ->\
+        -> log in to instagram along with credentials\
         \n:param user:\
         \n:param pwd:\
         \n:return:\
@@ -394,10 +394,10 @@ def functionStories(mySystem):
     # load browser drive in to var and open
     driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
     
-    def botlogin (user, pwd): # function to access the login page and log in
+    def botlogin (user, pwd): 
         
         """
-        ->\
+        -> log in to instagram along with credentials\
         \n:param user:\
         \n:param pwd:\
         \n:return:\
@@ -538,10 +538,10 @@ def functionDraw(mySystem):
     # load browser drive in to var and open
     driver = webdriver.Firefox(executable_path=f'{geckoFile}') # geckodriver path https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
 
-    def botlogin (user, pwd): # function to access the login page and log in
+    def botlogin (user, pwd):
         
         """
-        ->\
+        -> log in to instagram along with credentials\
         \n:param user:\
         \n:param pwd:\
         \n:return:\
