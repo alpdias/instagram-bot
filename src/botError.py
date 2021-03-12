@@ -118,10 +118,10 @@ def functionLike(mySystem):
         sleep(delay + 2)
 
    
-    def findhashtag(hashtag):  # function hashtag search page
+    def findhashtag(hashtag):  
         
         """
-        ->\
+        -> function hashtag search page\
         \n:param hashtag:\
         \n:return:\
         """
@@ -265,10 +265,10 @@ def functionComment(mySystem):
         sleep(delay + 2)
 
     
-    def findhashtag(hashtag): # function hashtag search page
+    def findhashtag(hashtag):
         
         """
-        ->\
+        -> function hashtag search page\
         \n:param hashtag:\
         \n:return:\
         """
@@ -570,10 +570,10 @@ def functionDraw(mySystem):
         sleep(delay + 2)
 
 
-    def findImg(imgPage): # function img search page
+    def findImg(imgPage):
         
         """
-        ->\
+        -> function hashtag search page\
         \n:param imgPage:\
         \n:return:\
         """
