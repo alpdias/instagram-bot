@@ -14,7 +14,7 @@ from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-def artName(timeSleep=0): # function to print text in ascii art
+def artName(timeSleep=0):
     
     """
     -> function to print text in ascii art\
@@ -129,10 +129,10 @@ def functionLike(mySystem):
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
 
 
-    def like(likes=1): # function to like the photos
+    def like(likes=1):
         
         """
-        ->\
+        -> function to like the photos\
         \n:param likes:\
         \n:return:\
         """
@@ -276,10 +276,10 @@ def functionComment(mySystem):
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
 
     
-    def typephrase(comment, field): # function to type letter by letter
+    def typephrase(comment, field):
         
         """
-        ->\
+        -> function to type letter by letter\
         \n:param comment:\
         \n:param field:\
         \n:return:\
@@ -291,11 +291,10 @@ def functionComment(mySystem):
             sleep(0.09) # input time of each letter
 
 
-    # function to like and comment the photos
     def likecomment(likes=1, comment=''):
         
         """
-        ->\
+        -> function to like and comment the photos\
         \n:param likes:\
         \n:param comment:\
         \n:return:\
@@ -426,10 +425,10 @@ def functionStories(mySystem):
         sleep(4)
 
 
-    def stories(): # function to view the stories
+    def stories():
         
         """
-        ->\
+        -> function to view the stories\
         \n:return:\
         """
 
@@ -581,10 +580,10 @@ def functionDraw(mySystem):
         driver.get(f'{imgPage}') # instagram img page url
 
         
-    def typephrase(comment, field): # function to type letter by letter
+    def typephrase(comment, field):
         
         """
-        ->\
+        -> function to type letter by letter\
         \n:param comment:\
         \n:param field:\
         \n:return:\
@@ -596,10 +595,10 @@ def functionDraw(mySystem):
             sleep(0.09) # input time of each letter
 
 
-    def commentDraw(amount=1, comment=''): # function to comment on the draw photo
+    def commentDraw(amount=1, comment=''):
         
         """
-        ->\
+        -> function to comment on the draw photo\
         \n:param amount:\
         \n:param comment:\
         \n:return:\
