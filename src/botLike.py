@@ -77,10 +77,10 @@ def functionLike(mySystem):
         print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
 
 
-    def botlogin (user, pwd): # function to access the login page and log in
+    def botlogin (user, pwd):
         
         """
-        ->\
+        -> function to access the login page and log in\
         \n:param user:\
         \n:param pwd:\
         \n:return:\
@@ -109,10 +109,10 @@ def functionLike(mySystem):
         sleep(delay + 2)
 
     
-    def findhashtag(hashtag): # function hashtag search page
+    def findhashtag(hashtag):
         
         """
-        ->\
+        -> function hashtag search page\
         \n:param hashtag:\
         \n:return:\
         """
@@ -120,10 +120,10 @@ def functionLike(mySystem):
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
 
     
-    def like(likes=1): # function to like the photos
+    def like(likes=1):
         
         """
-        ->\
+        -> function to like the photos\
         \n:param likes:\
         \n:return:\
         """ 

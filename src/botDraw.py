@@ -78,10 +78,10 @@ def functionDraw(mySystem):
         print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
 
 
-    def botlogin (user, pwd): # function to access the login page and log in
+    def botlogin (user, pwd):
         
         """
-        ->\
+        -> function to access the login page and log in\
         \n:param user:\
         \n:param pwd:\
         \n:return:\
@@ -110,10 +110,10 @@ def functionDraw(mySystem):
         sleep(delay + 2)
 
 
-    def findImg(imgPage): # function img search page
+    def findImg(imgPage):
         
         """
-        ->\
+        -> function img search page\
         \n:param imgPage:\
         \n:return:\
         """
@@ -121,10 +121,10 @@ def functionDraw(mySystem):
         driver.get(f'{imgPage}') # instagram img page url
 
         
-    def typephrase(comment, field): # function to type letter by letter
+    def typephrase(comment, field): 
         
         """
-        ->\
+        -> function to type letter by letter\
         \n:param comment:\
         \n:param field:\
         \n:return:\
@@ -136,10 +136,10 @@ def functionDraw(mySystem):
             sleep(0.09) # input time of each letter
 
 
-    def commentDraw(amount=1, comment=''): # function to comment on the draw photo
+    def commentDraw(amount=1, comment=''):
         
         """
-        ->\
+        -> function to comment on the draw photo\
         \n:param amount:\
         \n:param comment:\
         \n:return:\

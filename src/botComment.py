@@ -78,10 +78,10 @@ def functionComment(mySystem):
         print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
 
 
-    def botlogin (user, pwd): # function to access the login page and log in
+    def botlogin (user, pwd):
         
         """
-        ->\
+        -> function to access the login page and log in\
         \n:param user:\
         \n:param pwd:\
         \n:return:\
@@ -110,10 +110,10 @@ def functionComment(mySystem):
         sleep(delay + 2)
 
 
-    def findhashtag(hashtag): # function hashtag search page
+    def findhashtag(hashtag):
         
         """
-        ->\
+        -> function hashtag search page\
         \n:param hashtag:\
         \n:return:\
         """
@@ -121,10 +121,10 @@ def functionComment(mySystem):
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
 
 
-    def typephrase(comment, field): # function to type letter by letter
+    def typephrase(comment, field):
         
         """
-        ->\
+        -> function to type letter by letter\
         \n:param comment:\
         \n:param field:\
         \n:return:\
@@ -136,10 +136,10 @@ def functionComment(mySystem):
             sleep(0.09) # input time of each letter
 
 
-    def likecomment(likes=1, comment=''): # function to like and comment the photos
+    def likecomment(likes=1, comment=''):
         
         """
-        ->\
+        -> function to like and comment the photos\
         \n:param likes:\
         \n:param comment:\
         \n:return:\

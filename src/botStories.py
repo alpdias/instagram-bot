@@ -69,11 +69,10 @@ def functionStories(mySystem):
         print('\033[0;31mDRIVER ERROR!\033[m Check installed drive or path.')
 
 
-    # function to access the login page and log in
     def botlogin (user, pwd):
         
         """
-        ->\
+        -> function to access the login page and log in\
         \n:param user:\
         \n:param pwd:\
         \n:return:\
@@ -102,10 +101,10 @@ def functionStories(mySystem):
         sleep(4)
 
 
-    def stories(): # function to view the stories
+    def stories():
         
         """
-        ->\
+        -> function to view the stories\
         \n:return:\
         """
 
