@@ -92,7 +92,7 @@ def functionLike(mySystem):
         -> log in to instagram along with credentials\
         \n:param user: user to login\
         \n:param pwd: login password\
-        \n:return:\
+        \n:return: user's instagram login\
         """
 
         username = user # your user
@@ -122,8 +122,8 @@ def functionLike(mySystem):
         
         """
         -> function hashtag search page\
-        \n:param hashtag:\
-        \n:return:\
+        \n:param hashtag: hashtag name\
+        \n:return: hastag page\
         """
 
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
@@ -237,9 +237,9 @@ def functionComment(mySystem):
         
         """
         -> log in to instagram along with credentials\
-        \n:param user:\
-        \n:param pwd:\
-        \n:return:\
+        \n:param user: user to login\
+        \n:param pwd: login password\
+        \n:return: user's instagram login\
         """
         
         username = user # your user
@@ -269,8 +269,8 @@ def functionComment(mySystem):
         
         """
         -> function hashtag search page\
-        \n:param hashtag:\
-        \n:return:\
+        \n:param hashtag: hashtag name\
+        \n:return: hastag page\
         """
 
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
@@ -280,9 +280,9 @@ def functionComment(mySystem):
         
         """
         -> function to type letter by letter\
-        \n:param comment:\
-        \n:param field:\
-        \n:return:\
+        \n:param comment: comment to be typed\
+        \n:param field: field in which the comment will be inserted\
+        \n:return: comment being written in the selected field in a more natural way\
         """
 
         for letter in comment: # commentary and lyrics
@@ -397,9 +397,9 @@ def functionStories(mySystem):
         
         """
         -> log in to instagram along with credentials\
-        \n:param user:\
-        \n:param pwd:\
-        \n:return:\
+        \n:param user: user to login\
+        \n:param pwd: login password\
+        \n:return: user's instagram login\
         """
 
         username = user # your user
@@ -541,9 +541,9 @@ def functionDraw(mySystem):
         
         """
         -> log in to instagram along with credentials\
-        \n:param user:\
-        \n:param pwd:\
-        \n:return:\
+        \n:param user: user to login\
+        \n:param pwd: login password\
+        \n:return: user's instagram login\
         """
 
         username = user # your user
@@ -573,8 +573,8 @@ def functionDraw(mySystem):
         
         """
         -> function hashtag search page\
-        \n:param imgPage:\
-        \n:return:\
+        \n:param imgPage: image page\
+        \n:return: selected page\
         """
 
         driver.get(f'{imgPage}') # instagram img page url
@@ -584,9 +584,9 @@ def functionDraw(mySystem):
         
         """
         -> function to type letter by letter\
-        \n:param comment:\
-        \n:param field:\
-        \n:return:\
+        \n:param comment: comment to be typed\
+        \n:param field: field in which the comment will be inserted\
+        \n:return: comment being written in the selected field in a more natural way\
         """
 
         for letter in comment: # commentary and lyrics
