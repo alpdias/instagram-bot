@@ -80,10 +80,10 @@ def functionLike(mySystem):
     def botlogin (user, pwd):
         
         """
-        -> function to access the login page and log in\
-        \n:param user:\
-        \n:param pwd:\
-        \n:return:\
+        -> log in to instagram along with credentials\
+        \n:param user: user to login\
+        \n:param pwd: login password\
+        \n:return: user's instagram login\
         """
 
         username = user # your user
@@ -113,8 +113,8 @@ def functionLike(mySystem):
         
         """
         -> function hashtag search page\
-        \n:param hashtag:\
-        \n:return:\
+        \n:param hashtag: hashtag name\
+        \n:return: hastag page\
         """
 
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
@@ -124,8 +124,8 @@ def functionLike(mySystem):
         
         """
         -> function to like the photos\
-        \n:param likes:\
-        \n:return:\
+        \n:param likes: amount of likes\
+        \n:return: enjoy the photos\
         """ 
 
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
