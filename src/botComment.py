@@ -81,10 +81,10 @@ def functionComment(mySystem):
     def botlogin (user, pwd):
         
         """
-        -> function to access the login page and log in\
-        \n:param user:\
-        \n:param pwd:\
-        \n:return:\
+        -> log in to instagram along with credentials\
+        \n:param user: user to login\
+        \n:param pwd: login password\
+        \n:return: user's instagram login\
         """
         
         username = user # your user
@@ -114,8 +114,8 @@ def functionComment(mySystem):
         
         """
         -> function hashtag search page\
-        \n:param hashtag:\
-        \n:return:\
+        \n:param hashtag: hashtag name\
+        \n:return: hastag page\
         """
 
         driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/') # instagram tag page url
@@ -125,9 +125,9 @@ def functionComment(mySystem):
         
         """
         -> function to type letter by letter\
-        \n:param comment:\
-        \n:param field:\
-        \n:return:\
+        \n:param comment: comment to be typed\
+        \n:param field: field in which the comment will be inserted\
+        \n:return: comment being written in the selected field in a more natural way\
         """
 
         for letter in comment: # commentary and lyrics
@@ -140,9 +140,9 @@ def functionComment(mySystem):
         
         """
         -> function to like and comment the photos\
-        \n:param likes:\
-        \n:param comment:\
-        \n:return:\
+        \n:param likes: amount of likes\
+        \n:param comment: comment on photo\
+        \n:return: like and comment on photos\
         """ 
 
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
