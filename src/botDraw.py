@@ -81,10 +81,10 @@ def functionDraw(mySystem):
     def botlogin (user, pwd):
         
         """
-        -> function to access the login page and log in\
-        \n:param user:\
-        \n:param pwd:\
-        \n:return:\
+        -> log in to instagram along with credentials\
+        \n:param user: user to login\
+        \n:param pwd: login password\
+        \n:return: user's instagram login\
         """
 
         username = user # your user
@@ -113,9 +113,9 @@ def functionDraw(mySystem):
     def findImg(imgPage):
         
         """
-        -> function img search page\
-        \n:param imgPage:\
-        \n:return:\
+        -> function hashtag search page\
+        \n:param imgPage: image page\
+        \n:return: selected page\
         """
 
         driver.get(f'{imgPage}') # instagram img page url
@@ -125,9 +125,9 @@ def functionDraw(mySystem):
         
         """
         -> function to type letter by letter\
-        \n:param comment:\
-        \n:param field:\
-        \n:return:\
+        \n:param comment: comment to be typed\
+        \n:param field: field in which the comment will be inserted\
+        \n:return: comment being written in the selected field in a more natural way\
         """
 
         for letter in comment: # commentary and lyrics
@@ -140,9 +140,9 @@ def functionDraw(mySystem):
         
         """
         -> function to comment on the draw photo\
-        \n:param amount:\
-        \n:param comment:\
-        \n:return:\
+        \n:param amount: number of comments\
+        \n:param comment: comment on photo\
+        \n:return: comment on several photos\
         """ 
         
         driver.find_element_by_class_name('fr66n').click() # click the like button
