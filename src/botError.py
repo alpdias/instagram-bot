@@ -133,8 +133,8 @@ def functionLike(mySystem):
         
         """
         -> function to like the photos\
-        \n:param likes:\
-        \n:return:\
+        \n:param likes: amount of likes\
+        \n:return: enjoy the photos\
         """
 
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
@@ -295,9 +295,9 @@ def functionComment(mySystem):
         
         """
         -> function to like and comment the photos\
-        \n:param likes:\
-        \n:param comment:\
-        \n:return:\
+        \n:param likes: amount of likes\
+        \n:param comment: comment on photo\
+        \n:return: like and comment on photos\
         """
 
         driver.find_element_by_class_name('v1Nh3').click() # click on photo to open and upload
@@ -429,7 +429,7 @@ def functionStories(mySystem):
         
         """
         -> function to view the stories\
-        \n:return:\
+        \n:return: see stories on instagram\
         """
 
         try:
@@ -599,9 +599,9 @@ def functionDraw(mySystem):
         
         """
         -> function to comment on the draw photo\
-        \n:param amount:\
-        \n:param comment:\
-        \n:return:\
+        \n:param amount: number of comments\
+        \n:param comment: comment on photo\
+        \n:return: comment on several photos\
         """
         
         driver.find_element_by_class_name('fr66n').click() # click the like button
