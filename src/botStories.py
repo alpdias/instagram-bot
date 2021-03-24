@@ -72,10 +72,10 @@ def functionStories(mySystem):
     def botlogin (user, pwd):
         
         """
-        -> function to access the login page and log in\
-        \n:param user:\
-        \n:param pwd:\
-        \n:return:\
+        -> log in to instagram along with credentials\
+        \n:param user: user to login\
+        \n:param pwd: login password\
+        \n:return: user's instagram login\
         """
 
         username = user # your user
@@ -105,7 +105,7 @@ def functionStories(mySystem):
         
         """
         -> function to view the stories\
-        \n:return:\
+        \n:return: see stories on instagram\
         """
 
         try:
